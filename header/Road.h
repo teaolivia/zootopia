@@ -13,8 +13,8 @@ class Road : public Facility {
 	private:
 		enum roadType
 		{
-			entrance const, // pintu masuk
-			exit const,		// pintu keluar
-			space const		// jalan lowong
+			cell_entrance const, 	// pintu masuk
+			cell_exit const,		// pintu keluar
+			cell_space const		// jalan lowong
 		};
 };
