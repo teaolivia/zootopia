@@ -7,9 +7,14 @@ using namespace std;
 template <class roadType>
 class Road : public Facility {
 	public:
-		getEntrance();
-		getExit();
-		getSpace();
+		// 5 sekawan
+		Road();
+		~Road();
+		Road(const Road&);
+		Road& operator=(const Road&);
+		roadType getEntrance();
+		roadType getExit();
+		roadType getSpace();
 	private:
 		enum roadType
 		{
