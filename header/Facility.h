@@ -13,6 +13,8 @@ class Facility : public Cell {
 		Facility& operator=(const Facility&);
 		// getter & setter
 		virtual int getArea() = 0;
+		// friend with Zoo
+		friend class Zoo;
 		
 	protected:
 		int area;

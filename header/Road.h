@@ -15,6 +15,8 @@ class Road : public Facility {
 		roadType getEntrance();
 		roadType getExit();
 		roadType getSpace();
+		// friend with zoo
+		friend class Zoo;
 	private:
 		enum roadType
 		{
