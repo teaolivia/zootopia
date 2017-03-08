@@ -10,6 +10,8 @@ class Animal {
 		Animal();
 		~Animal();
 
+		friend class Zoo;
+		
 		virtual void TampilKarakter() = 0;
 		virtual void Sound() = 0;
 		virtual void Move() = 0;

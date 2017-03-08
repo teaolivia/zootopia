@@ -4,7 +4,10 @@ using namespace std;
 
 class Cell {
 	public:
-		
-	private:
+	friend class Zoo;
+
+	protected:
 		// generik
+		Cage<Habitat> cage;
+		Road<RoadType> road;
 };

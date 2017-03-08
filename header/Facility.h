@@ -14,6 +14,6 @@ class Facility : public Cell {
 		// getter & setter
 		virtual int getArea() = 0;
 		
-	private:
+	protected:
 		int area;
 };
