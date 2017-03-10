@@ -21,4 +21,5 @@ class Cage : public Cell {
 			water const,	// perairan
 			air const		// udara
 		};	
+		Animal* animal;
 };
