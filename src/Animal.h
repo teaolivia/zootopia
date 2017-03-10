@@ -11,6 +11,7 @@ class Animal {
 		~Animal();
 
 		friend class Zoo;
+		friend class Cage<habitat>;
 		
 		virtual void TampilKarakter() = 0;
 		virtual void Sound() = 0;
@@ -20,6 +21,6 @@ class Animal {
 	protected:
 		//tipe makanan
 		//amfibi/tidak
-		//lokasi cell
+		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 };
 #endif

@@ -1,20 +1,31 @@
-#include <iostream>
+#include "Zoo.h"
 
-using namespace std;
+// 5 sekawan
+Zoo::Zoo() {
 
-class Zoo() {
-	public:
-		// 5 sekawan
-		Zoo();
-		Zoo(Cell cell);
-		Zoo(Cell&);
-		~Zoo();
-		Zoo& op=();
-		// methods
-		void createZoo();
-		void printZoo();
-		
-	private:
-		Cell cell;
-		Animal animal;
-};
+}
+
+Zoo::Zoo(int column, int row, Cell cell) {
+
+}
+
+Zoo::Zoo(Cell& cell) {
+
+}
+
+Zoo::~Zoo() {
+
+}
+
+Zoo& Zoo::op=(Cell& cell) {
+
+}
+
+// methods
+void Zoo::createZoo() {
+
+}
+
+void Zoo::printZoo() {
+
+}
