@@ -11,10 +11,10 @@ class Zoo {
 		~Zoo();
 		Zoo& op=(const Cell& );
 		// methods
-		void createZoo();
 		void printZoo();
 	private:
-		int column;
-		int row;
+		const int column = ;
+		const int row;
 		Cell* cell;
+		const int NUM_OF_CAGE = 10;
 };
