@@ -7,17 +7,18 @@
 
 class Animal {
 	public:
-		Animal();
-		~Animal();
+		Animal(); // ctor
+		Animal(int bb, bool amf); // ctor dengan param beratBadan dan isAmfibi
+        ~Animal();
 
-		friend class Zoo;
-		friend class Cage<habitat>;
+		//friend class Zoo;
+		//friend class Cage<habitat>;
 
-		virtual int getberatBadan() = 0;
+		int getberatBadan();
 		virtual void TampilKarakter() = 0;
 		virtual void Sound() = 0;
 		virtual void Move() = 0;
-		virtual bool isAmphibi() = 0;
+		bool isAmfibi();
 
 		// untuk mengecek liar apa tidaknya
 
@@ -25,15 +26,15 @@ class Animal {
 		static int GetNbMakanan();
 
 	protected:
-		enum eatingType {
-			const carnivore;
-			const herbivore;
-			const omnivore;
-		 };
-		int beratBadan;
-		//amfibi/tidak
+//		enum eatingType {
+//			const carnivore;
+//			const herbivore;
+//			const omnivore;
+//		 };
+		const int beratBadan;
+		const bool amfibi; //amfibi/tidak
 		//lokasi cell
-		static int NbMakanan();
+		static int NbMakanan;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 
 };
