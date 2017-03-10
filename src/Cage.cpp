@@ -1,4 +1,7 @@
 #include "Cage.h"
 
-int Cage::countCell = 0;
+template <class habitat>
+int Cage<habitat>::countCell = 0;
+
+template <class habitat>
 
