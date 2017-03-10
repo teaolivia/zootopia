@@ -1,11 +1,11 @@
-#ifndef	CROCODILE_H
-#define CROCODILE_H
+#ifndef	FROG_H
+#define FROG_H
 
 #include "Animal.h"
 #include "WaterAnimal.h"
 #include "LandAnimal.h"
 
-class Shark : public WaterAnimal {
+class Frog : public LandAnimal {
 	public:
 		//void TampilKarakter();
 		//void Bersuara();
