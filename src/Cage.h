@@ -3,23 +3,17 @@
 using namespace std;
 
 
-template <class habitat>
+template <class Habitat>
 class Cage : public Cell {
 	public:
 		Cage();
 		~Cage();
 		Cage(habitat const&);
 		static int countCell;
-		habitat getLand();
-		habitat getWater();
-		habitat getAir();
+		Habitat getLand();
+		Habitat getWater();
+		Habitat getAir();
 
 	private:
-		enum habitat 
-		{
-			land const,		// darat
-			water const,	// perairan
-			air const		// udara
-		};	
 		Animal* animal;
 };
