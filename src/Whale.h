@@ -8,12 +8,16 @@
 
 class Whale : public WaterAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
+	    Whale();
+	    Whale(int bb);
+	    ~Whale();
+		void TampilKarakter();
+		void Bersuara();
 		//void Bergerak();
-		void Berenang(int lokasi);
-	
+		//void Berenang(int lokasi);
+		void Berenang();
+
 	protected:
-	
+
 };
 #endif

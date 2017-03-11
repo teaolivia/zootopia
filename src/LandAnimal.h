@@ -9,11 +9,11 @@ class LandAnimal : public Animal {
 	public:
 		LandAnimal();
 		~LandAnimal();
-		
-		virtual void Walk() = 0;
-		
-	
+
+		virtual void Berjalan() = 0;
+
+
 	protected:
-	
+
 };
 #endif

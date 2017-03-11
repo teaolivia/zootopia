@@ -16,4 +16,6 @@ class Cage : public Cell {
 
 	private:
 		Animal* animal;
+    	int length;
+    	int width;
 };
