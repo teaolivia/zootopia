@@ -8,13 +8,14 @@
 class Animal {
 	public:
 		Animal(); // ctor
-		Animal(int bb); // ctor dengan param beratBadan dan isAmfibi
+		Animal(int bb, int por); // ctor dengan param beratBadan dan porsiMakan
         ~Animal();
 
 		//friend class Zoo;
 		//friend class Cage<habitat>;
 
 		int GetBeratBadan();
+		int GetPorsiMakan();
 		virtual void TampilKarakter() = 0;
 		virtual void Bersuara() = 0;
 		//virtual void Bergerak() = 0;
@@ -32,6 +33,7 @@ class Animal {
 //			const omnivore;
 //		 };
 		const int BeratBadan;
+		const int PorsiMakan;
 		//const bool amfibi; //amfibi/tidak
 		//lokasi cell
 		static int NbMakanan;

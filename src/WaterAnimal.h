@@ -13,6 +13,7 @@ class WaterAnimal : public Animal {
 		virtual void Berenang() = 0;
 
 	protected:
+	    const Habitat water;
 
 };
 #endif
