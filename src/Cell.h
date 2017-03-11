@@ -10,4 +10,7 @@ class Cell {
 		// generik
 		Cage<Habitat> cage;
 		Road<RoadType> road;
+    // location
+    int x;
+    int y;
 };

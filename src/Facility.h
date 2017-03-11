@@ -17,5 +17,6 @@ class Facility : public Cell {
 		friend class Zoo;
 		
 	protected:
-		int area;
+    int length;
+    int width;
 };
