@@ -22,8 +22,6 @@ class Cage : public Cell {
 			air const		// udara
 		};	
 		Animal* animal;
-    
-    // location
-    int x;
-    int y;
+    int length;
+    int width;
 };
