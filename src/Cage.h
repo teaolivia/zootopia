@@ -14,7 +14,7 @@ class Cage : public Cell {
 		habitat getWater();
 		habitat getAir();
 
-	private:
+	protected:
 		enum habitat 
 		{
 			land const,		// darat
@@ -22,4 +22,8 @@ class Cage : public Cell {
 			air const		// udara
 		};	
 		Animal* animal;
+    
+    // location
+    int x;
+    int y;
 };

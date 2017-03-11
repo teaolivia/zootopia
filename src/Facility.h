@@ -18,4 +18,7 @@ class Facility : public Cell {
 		
 	protected:
 		int area;
+    // location
+    int x;
+    int y;
 };
