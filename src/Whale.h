@@ -9,13 +9,13 @@
 class Whale : public WaterAnimal {
 	public:
 	    Whale();
-	    Whale(int bb, bool amf);
+	    Whale(int bb);
 	    ~Whale();
-		//void TampilKarakter();
-		//void Bersuara();
+		void TampilKarakter();
+		void Bersuara();
 		//void Bergerak();
 		//void Berenang(int lokasi);
-		void Swim();
+		void Berenang();
 
 	protected:
 

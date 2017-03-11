@@ -9,11 +9,10 @@ class WaterAnimal : public Animal {
 	public:
 		WaterAnimal();
 		~WaterAnimal();
-		
-		virtual void Swim() = 0;
-		
-	
+
+		virtual void Berenang() = 0;
+
 	protected:
-	
+
 };
 #endif

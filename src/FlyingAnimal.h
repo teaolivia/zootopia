@@ -9,11 +9,11 @@ class FlyingAnimal : public Animal {
 	public:
 		FlyingAnimal();
 		~FlyingAnimal();
-		
-		virtual void Fly() = 0;
-		
-	
+
+		virtual void Terbang() = 0;
+
+
 	protected:
-	
+
 };
 #endif

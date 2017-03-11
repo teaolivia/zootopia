@@ -15,6 +15,6 @@ Whale::~Whale() {
 
 }
 
-void Whale::Swim() {
+void Whale::Berenang() {
     cout << "whale swims" << endl;
 }
