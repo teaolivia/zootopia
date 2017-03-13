@@ -1,5 +1,5 @@
-#ifndef	FROG_H
-#define FROG_H
+#ifndef	SALAMANDER_H
+#define SALAMANDER_H
 
 #include "Animal.h"
 #include "WaterAnimal.h"
@@ -7,10 +7,10 @@
 
 #define defaultBeratBadan 1
 
-class Frog : public LandAnimal, public WaterAnimal {
+class Salamander : public LandAnimal, public WaterAnimal {
 	public:
-		Frog();
-		~Frog();
+		Salamander();
+		~Salamander();
 		
 		void TampilKarakter();
 		void Bersuara();

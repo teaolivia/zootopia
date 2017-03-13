@@ -6,7 +6,7 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 2
+#define defaultBeratBadan 2000
 
 class Tiger : public LandAnimal {
 	public:

@@ -6,11 +6,15 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
+#define defaultBeratBadan 1
+
 class Rayfish : public WaterAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Rayfish();
+		~Rayfish();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Berenang(int lokasi);
 	
 	protected:

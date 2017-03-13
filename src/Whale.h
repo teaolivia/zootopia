@@ -12,10 +12,10 @@ class Whale : public WaterAnimal {
 	public:
 	    Whale();
 	    ~Whale();
+	    
 		void TampilKarakter();
 		void Bersuara();
-		//void Berenang(int lokasi);
-		void Berenang();
+		void Berenang(int lokasi);
 
 	protected:
 

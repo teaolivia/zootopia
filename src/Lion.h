@@ -6,7 +6,7 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 4
+#define defaultBeratBadan 4000
 
 class Lion : public LandAnimal {
 	public:
