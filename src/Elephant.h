@@ -6,10 +6,11 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
+#define defaultBeratBadan 10000
+
 class Elephant : public LandAnimal {
 	public:
 		Elephant();
-		Elephant(int bb);
 		~Elephant();
 		
 		void TampilKarakter();

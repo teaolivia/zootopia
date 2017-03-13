@@ -6,10 +6,11 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
+#define defaultBeratBadan 2
+
 class MountainLion : public LandAnimal {
 	public:
 		MountainLion();
-		MountainLion(int bb);
 		~MountainLion();
 		
 		void TampilKarakter();

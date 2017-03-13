@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Elephant::Elephant() : Animal(1) {}
-Elephant::Elephant(int bb) : Animal (BeratBadan) {}
+Elephant::Elephant() : LandAnimal(defaultBeratBadan) {
 Elephant::~Elephant(){}
 		
 void Elephant::TampilKarakter(){

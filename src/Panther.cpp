@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Panther::Panther() : Animal(1) {}
-Panther::Panther(int bb) : Animal (BeratBadan) {}
+Panther::Panther() : LandAnimal(defaultBeratBadan) {}
 Panther::~Panther(){}
 		
 void Panther::TampilKarakter(){

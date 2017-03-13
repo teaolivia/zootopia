@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Peacock::Peacock() : Animal(1) {}
-Peacock::Peacock(int bb) : Animal (BeratBadan) {}
+Peacock::Peacock() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
 Peacock::~Peacock(){}
 		
 void Peacock::TampilKarakter(){
