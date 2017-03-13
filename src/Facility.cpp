@@ -1,4 +1,4 @@
-#include "Facility.cpp"
+#include "Facility.h"
 
 // 5 sekawan
 Facility::Facility() {
@@ -23,5 +23,5 @@ Facility& Facility::operator=(const Facility&) {
 
 // getter & setter
 int Facility::getArea() {
-	return 0;
+	return length * width;
 }

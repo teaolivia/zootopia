@@ -9,9 +9,12 @@
 
 class Eagle : public FlyingAnimal, public LandAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Eagle();
+		Eagle(int bb);
+		~Eagle();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Terbang(int lokasi);
 		void Berjalan(int lokasi);
 	

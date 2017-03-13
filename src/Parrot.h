@@ -9,9 +9,12 @@
 
 class Parrot : public FlyingAnimal, public LandAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Parrot();
+		Parrot(int bb);
+		~Parrot();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Terbang(int lokasi);
 		void Berjalan(int lokasi);
 	
