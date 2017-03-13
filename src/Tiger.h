@@ -5,15 +5,17 @@
 
 #include "Animal.h"
 #include "LandAnimal.h"
-#include "WaterAnimal.h"
 
-class Tiger : public LandAnimal, public WaterAnimal {
+#define defaultBeratBadan 2
+
+class Tiger : public LandAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Tiger();
+		~Tiger();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Berjalan(int lokasi);
-		void Berenang(int lokasi);
 	
 	protected:
 	

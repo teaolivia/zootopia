@@ -7,8 +7,7 @@
 
 class Animal {
 	public:
-		Animal(); // ctor
-		Animal(int bb, int por); // ctor dengan param beratBadan dan porsiMakan
+		Animal(int bb); // ctor dengan param beratBadan
         ~Animal();
 
 		//friend class Zoo;
@@ -33,7 +32,6 @@ class Animal {
 //			const omnivore;
 //		 };
 		const int BeratBadan;
-		const int PorsiMakan;
 		//const bool amfibi; //amfibi/tidak
 		//lokasi cell
 		static int NbMakanan;

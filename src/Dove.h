@@ -1,7 +1,7 @@
-//File "Peacock.h"
+//File "Dove.h"
 
-#ifndef	PEACOCK_H
-#define PEACOCK_H
+#ifndef	DOVE_H
+#define DOVE_H
 
 #include "Animal.h"
 #include "FlyingAnimal.h"
@@ -9,10 +9,10 @@
 
 #define defaultBeratBadan 3
 
-class Peacock : public FlyingAnimal, public LandAnimal {
+class Dove : public FlyingAnimal, public LandAnimal {
 	public:
-		Peacock();
-		~Peacock();
+		Dove();
+		~Dove();
 		
 		void TampilKarakter();
 		void Bersuara();
