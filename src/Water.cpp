@@ -1,14 +1,9 @@
 #include "Water.h"
 
-Water::Water() : JenisHabitat(a) {
-
+Water::Water() : JenisHabitat('w') {
+    Habitat::AddHabitat(JenisHabitat);
 }
 
 Water::~Water() {
 
 }
-
-char Water::GetJenisHabitat() {
-    return JenisHabitat;
-}
-

@@ -1,13 +1,9 @@
-#include "AirHabitat.h"
+#include "Air.h"
 
-AirHabitat::AirHabitat() : JenisHabitat(a) {
-
+Air::Air() : JenisHabitat('a') {
+    Habitat::AddHabitat(JenisHabitat);
 }
 
-AirHabitat::~AirHabitat() {
+Air::~Air() {
 
-}
-
-char AirHabitat::GetJenisHabitat() {
-    return JenisHabitat;
 }

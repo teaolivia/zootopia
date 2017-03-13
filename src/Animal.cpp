@@ -1,5 +1,6 @@
 // file Animal.cpp
 #include "Animal.h"
+#include "habitat.h"
 
 int Animal::NbMakanan = 0;
 
@@ -13,6 +14,10 @@ Animal::~Animal() {
 
 int Animal::GetBeratBadan() {
     return BeratBadan;
+}
+
+bool Animal::IsHabitat(char c) {
+    return (habitat_animal.GetHabitat(0)==c || habitat_animal.GetHabitat(1)==c);
 }
 
 int Animal::GetNbMakanan() {

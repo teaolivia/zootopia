@@ -1,17 +1,14 @@
 // file Water.h
 
-#include "WaterAnimal.h"
+#include "habitat.h"
 
 #ifndef WATER_H
 #define WATER_H
 
-class Water {
+class Water : public Habitat {
 public:
     Water();
     ~Water();
-    char GetJenisHabitat();
-
-    friend class WaterAnimal;
 
 private:
     const char JenisHabitat = 'w';

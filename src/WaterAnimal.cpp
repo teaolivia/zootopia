@@ -3,14 +3,10 @@
 #include "WaterAnimal.h"
 #include "Water.h"
 
-WaterAnimal::WaterAnimal(int bb) : Animal(bb) {
-
+WaterAnimal::WaterAnimal(int bb) : Animal(bb), JenisHabitat('w') {
+    habitat_animal.AddHabitat(JenisHabitat);
 }
 
 WaterAnimal::~WaterAnimal() {
 
-}
-
-char WaterAnimal::GetJenisHabitat() {
-    return w->JenisHabitat;
 }

@@ -13,7 +13,8 @@ int main() {
     w.Berenang();
     w.Bersuara();
     w.TampilKarakter();
-    cout << "habitat: " << w.GetJenisHabitat() << endl;
+    //cout << "habitat: " << w.GetJenisHabitat() << endl;
+    cout << "ishabitat water: " << w.IsHabitat('a') << endl;
 
     return 0;
 

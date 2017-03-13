@@ -1,13 +1,14 @@
 // file Air.h
 
+#include "habitat.h"
+
 #ifndef AIR_H
 #define AIR_H
 
-class Air {
+class Air : public Habitat {
 public:
     Air();
     ~Air();
-    char GetJenisHabitat();
 
 private:
     const char JenisHabitat = 'a';

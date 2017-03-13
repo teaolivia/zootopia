@@ -1,5 +1,7 @@
 // file Land.h
 
+#include "habitat.h"
+
 #ifndef LAND_H
 #define LAND_H
 
@@ -7,7 +9,6 @@ class Land {
 public:
     Land();
     ~Land();
-    char GetJenisHabitat();
 
 private:
     const char JenisHabitat = 'l';
