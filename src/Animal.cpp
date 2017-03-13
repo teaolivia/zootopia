@@ -1,7 +1,7 @@
 // file Animal.cpp
 #include "Animal.h"
 
-int Animal::NbMakanan = 0;
+float Animal::NbMakanan = 0;
 
 Animal::Animal(int bb) : BeratBadan(bb) {
     NbMakanan += (0.02*BeratBadan);
@@ -15,6 +15,6 @@ int Animal::GetBeratBadan() {
     return BeratBadan;
 }
 
-int Animal::GetNbMakanan() {
+float Animal::GetNbMakanan() {
     return NbMakanan;
 }
