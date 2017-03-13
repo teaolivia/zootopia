@@ -6,12 +6,14 @@ using namespace std;
 
 int main() {
 
-    Whale a;
+    Whale w;
 
-
-    cout << "beratbadan: " << a.getberatBadan() << endl;
-    cout << "isamfibi: " << a.isAmfibi() << endl;
-    cout << "getnbmakanan: " << a.GetNbMakanan() << endl;
+    cout << "beratbadan: " << w.GetBeratBadan() << endl;
+    cout << "nbmakanan: " << w.GetNbMakanan() << endl;
+    w.Berenang();
+    w.Bersuara();
+    w.TampilKarakter();
+    cout << "habitat: " << w.GetJenisHabitat() << endl;
 
     return 0;
 

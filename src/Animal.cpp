@@ -3,12 +3,8 @@
 
 int Animal::NbMakanan = 0;
 
-Animal::Animal() : BeratBadan(1), PorsiMakan(1) {
-
-}
-
-Animal::Animal(int bb, int por) : BeratBadan(bb), PorsiMakan(por) {
-
+Animal::Animal(int bb) : BeratBadan(bb) {
+    NbMakanan += (0.02*BeratBadan);
 }
 
 Animal::~Animal() {
@@ -17,10 +13,6 @@ Animal::~Animal() {
 
 int Animal::GetBeratBadan() {
     return BeratBadan;
-}
-
-int Animal::GetPorsiMakan() {
-    return PorsiMakan;
 }
 
 int Animal::GetNbMakanan() {

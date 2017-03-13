@@ -1,5 +1,7 @@
 // file Water.h
 
+#include "WaterAnimal.h"
+
 #ifndef WATER_H
 #define WATER_H
 
@@ -8,6 +10,8 @@ public:
     Water();
     ~Water();
     char GetJenisHabitat();
+
+    friend class WaterAnimal;
 
 private:
     const char JenisHabitat = 'w';
