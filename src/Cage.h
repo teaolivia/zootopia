@@ -1,6 +1,9 @@
 #include <iostream>
 #include "Cell.h"
 #include "Animal.h"
+#include "Land.h"
+#include "Water.h"
+#include "Air.h"
 
 using namespace std;
 
@@ -11,9 +14,9 @@ class Cage : public Cell {
 		~Cage();
 		Cage(Habitat const&);
 		static int countCell;
-		Habitat getLand();
-		Habitat getWater();
-		Habitat getAir();
+		// Habitat getLand();
+		// Habitat getWater();
+		// Habitat getAir();
 		friend class Cell;
 
 	protected:
@@ -21,5 +24,5 @@ class Cage : public Cell {
     	int length;
     	int width;
     	// Habitat
-    	Habitat* LandHabitat, WaterHabitat, AirHabitat;
+    	Habitat* Land, Water, Air;
 };
