@@ -26,7 +26,7 @@ class Animal {
 		// untuk mengecek liar apa tidaknya
 
 		//virtual void Interract() = 0;
-		static int GetNbMakanan();
+		static float GetNbMakanan();
 
 	protected:
 //		enum eatingType {
@@ -37,7 +37,7 @@ class Animal {
 		const int BeratBadan;
 		//const bool amfibi; //amfibi/tidak
 		//lokasi cell
-		static int NbMakanan;
+		static float NbMakanan;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 		Habitat habitat_animal;
 

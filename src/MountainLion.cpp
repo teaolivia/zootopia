@@ -5,8 +5,7 @@
 
 using namespace std;
 
-MountainLion::MountainLion() : Animal(1) {}
-MountainLion::MountainLion(int bb) : Animal (BeratBadan) {}
+MountainLion::MountainLion() : LandAnimal(defaultBeratBadan) {}
 MountainLion::~MountainLion(){}
 		
 void MountainLion::TampilKarakter(){

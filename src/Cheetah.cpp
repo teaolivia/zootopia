@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Cheetah::Cheetah() : Animal(1) {}
-Cheetah::Cheetah(int bb) : Animal (BeratBadan) {}
+Cheetah::Cheetah() : LandAnimal(defaultBeratBadan) {}
 Cheetah::~Cheetah(){}
 		
 void Cheetah::TampilKarakter(){

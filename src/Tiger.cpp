@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Tiger::Tiger() : LandAnimal(100) {}
-//Tiger::Tiger(int bb) : LandAnimal(100) {}
+Tiger::Tiger() : LandAnimal(defaultBeratBadan) {}
 Tiger::~Tiger(){}
 		
 void Tiger::TampilKarakter(){

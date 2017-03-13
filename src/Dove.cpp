@@ -5,8 +5,7 @@
 
 using namespace std;
 
-Dove::Dove() : Animal(1) {}
-Dove::Dove(int bb) : Animal (BeratBadan) {}
+Dove::Dove() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
 Dove::~Dove(){}
 		
 void Dove::TampilKarakter(){

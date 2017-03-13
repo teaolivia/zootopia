@@ -2,7 +2,7 @@
 #include "Animal.h"
 #include "habitat.h"
 
-int Animal::NbMakanan = 0;
+float Animal::NbMakanan = 0;
 
 Animal::Animal(int bb) : BeratBadan(bb) {
     NbMakanan += (0.02*BeratBadan);
@@ -20,6 +20,6 @@ bool Animal::IsHabitat(char c) {
     return (habitat_animal.GetHabitat(0)==c || habitat_animal.GetHabitat(1)==c);
 }
 
-int Animal::GetNbMakanan() {
+float Animal::GetNbMakanan() {
     return NbMakanan;
 }

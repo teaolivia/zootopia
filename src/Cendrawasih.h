@@ -7,10 +7,11 @@
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
+#define defaultBeratBadan 3
+
 class Cendrawasih : public FlyingAnimal, public LandAnimal {
 	public:
 		Cendrawasih();
-		Cendrawasih(int bb);
 		~Cendrawasih();
 		
 		void TampilKarakter();

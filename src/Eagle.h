@@ -7,10 +7,11 @@
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
+#define defaultBeratBadan 3
+
 class Eagle : public FlyingAnimal, public LandAnimal {
 	public:
 		Eagle();
-		Eagle(int bb);
 		~Eagle();
 		
 		void TampilKarakter();
