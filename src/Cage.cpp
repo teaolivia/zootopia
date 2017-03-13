@@ -21,6 +21,7 @@ Cage<Habitat>::Cage(Habitat const& h) {
 
 }
 
+
 // template <class Habitat>
 // Habitat Cage<Land>::getLand() {
 // 	return Land;

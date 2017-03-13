@@ -1,27 +1,29 @@
-		Road::Road() {
+#include "Road.h"
 
-		}
+Road::Road() {
 
-		Road::~Road() {
+}
 
-		}
+Road::~Road() {
 
-		Road::Road(const Road&) {
+}
 
-		}
+Road::Road(const Road&) {
 
-		Road& Road::operator=(const Road&) {
-			
-		}
+}
 
-		roadType Road::getEntrance() {
-			return cell_entrance;
-		}
+Road& Road::operator=(const Road&) {
+  
+}
 
-		roadType Road::getExit() {
-			return cell_exit;
-		}
+roadType Road::getEntrance() {
+  return cell_entrance;
+}
 
-		roadType Road::getSpace() {
-			return cell_space;
-		}
+roadType Road::getExit() {
+  return cell_exit;
+}
+
+roadType Road::getSpace() {
+  return cell_space;
+}
