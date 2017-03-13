@@ -9,9 +9,12 @@
 
 class Peacock : public FlyingAnimal, public LandAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Peacock();
+		Peacock(int bb);
+		~Peacock();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Terbang(int lokasi);
 		void Berjalan(int lokasi);
 	

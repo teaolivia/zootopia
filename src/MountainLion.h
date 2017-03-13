@@ -5,15 +5,16 @@
 
 #include "Animal.h"
 #include "LandAnimal.h"
-#include "WaterAnimal.h"
 
-class MountainLion : public LandAnimal, public WaterAnimal {
+class MountainLion : public LandAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		MountainLion();
+		MountainLion(int bb);
+		~MountainLion();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Berjalan(int lokasi);
-		void Berenang(int lokasi);
 	
 	protected:
 	

@@ -1,17 +1,17 @@
-//File "Eagle.h"
+//File "Dove.h"
 
-#ifndef	EAGLE_H
-#define EAGLE_H
+#ifndef	DOVE_H
+#define DOVE_H
 
 #include "Animal.h"
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
-class Eagle : public FlyingAnimal, public LandAnimal {
+class Dove : public FlyingAnimal, public LandAnimal {
 	public:
-		Eagle();
-		Eagle(int bb);
-		~Eagle();
+		Dove();
+		Dove(int bb);
+		~Dove();
 		
 		void TampilKarakter();
 		void Bersuara();

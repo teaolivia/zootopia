@@ -1,16 +1,16 @@
-//File "Lion.h"
+//File "Elephant.h"
 
-#ifndef	LION_H
-#define LION_H
+#ifndef	ELEPHANT_H
+#define ELEPHANT_H
 
 #include "Animal.h"
 #include "LandAnimal.h"
 
-class Lion : public LandAnimal {
+class Elephant : public LandAnimal {
 	public:
-		Lion();
-		Lion(int bb);
-		~Lion();
+		Elephant();
+		Elephant(int bb);
+		~Elephant();
 		
 		void TampilKarakter();
 		void Bersuara();
