@@ -10,8 +10,8 @@ class Cell {
   
 	protected:
 		// generik
-		Cage<Habitat> cage;
-		Road<RoadType> road;
+
+		//Road<> road;
     // location
     int x;
     int y;

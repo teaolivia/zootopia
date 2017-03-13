@@ -1,28 +1,35 @@
 #include <iostream>
-#include "Cell.h"
 #include "Animal.h"
 #include "Land.h"
 #include "Water.h"
 #include "Air.h"
+#include "habitat.h"
 
 using namespace std;
 
-template <class Habitat>
+class Habitat;
+
+template <class habitat>
 class Cage : public Cell {
 	public:
 		Cage();
 		~Cage();
-		Cage(Habitat const&);
+		Cage(habitat const&);
 		static int countCell;
-		// Habitat getLand();
-		// Habitat getWater();
-		// Habitat getAir();
+		// Habitat& getLand();
+		// Habitat& getWater();
+		// Habitat& getAir();
 		friend class Cell;
+		bool CageCollisionCheck();
+		// fungsi untuk testing
+
 
 	protected:
 		Animal* animal;
-    	int length;
-    	int width;
     	// Habitat
-    	Habitat* Land, Water, Air;
+    	habitat* land, water, air;
+    	const char land = 'l';
+    	const char water = 'w'; 
+    	const char air = 'a';
+    	const char habitat;
 };

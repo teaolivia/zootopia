@@ -9,7 +9,7 @@ class Water : public Habitat {
 public:
     Water();
     ~Water();
-
+    
 private:
     const char JenisHabitat = 'w';
 

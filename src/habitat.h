@@ -6,6 +6,7 @@
 class Habitat {
 public:
     Habitat();
+    friend class Cage;
     void AddHabitat(char c);
     char GetHabitat(int i);
     //bool IsHabitat(char c);
