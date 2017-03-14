@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-Whale::Whale() : WaterAnimal(defaultBeratBadan) {
+Whale::Whale() : WaterAnimal(defaultBeratBadan), Animal(defaultBeratBadan) {
 
 }
 
