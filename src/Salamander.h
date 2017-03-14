@@ -6,7 +6,11 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 1
+<<<<<<< HEAD
 #define tipe_makan 'k'
+=======
+#define default_jenis_makanan 'k'
+>>>>>>> da3158a40bebe7615f451e88707f661f213ca894
 
 
 /** @class Salamander

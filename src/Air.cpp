@@ -1,9 +1,13 @@
 #include "Air.h"
 
-Air::Air() : JenisHabitat('a') {
-    Habitat::AddHabitat(JenisHabitat);
+Air::Air() {
+
 }
 
 Air::~Air() {
 
+}
+
+void Air::printCage() {
+	cout << air << endl;
 }

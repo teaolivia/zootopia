@@ -1,35 +1,30 @@
+#ifndef CAGE_H
+#define CAGE_H
+
 #include <iostream>
 #include "Animal.h"
-#include "Land.h"
-#include "Water.h"
-#include "Air.h"
-#include "habitat.h"
+// #include "Land.h"
+// #include "Water.h"
+// #include "Air.h"
+//#include "habitat.h"
 
-using namespace std;
-
-class Habitat;
-
-template <class habitat>
-class Cage : public Cell {
+/** @class Cage
+  * Kelas yang menciptakan cage dengan ukuran tertentu
+  */
+class Cage {
 	public:
 		Cage();
+        Cage(int x,int y);
 		~Cage();
-		Cage(habitat const&);
-		static int countCell;
-		// Habitat& getLand();
-		// Habitat& getWater();
-		// Habitat& getAir();
-		friend class Cell;
-		bool CageCollisionCheck();
-		// fungsi untuk testing
-
+        virtual char getChar();
+		virtual void printCage(int x,int y);
 
 	protected:
 		Animal* animal;
     	// Habitat
-    	habitat* land, water, air;
-    	const char land = 'l';
-    	const char water = 'w'; 
-    	const char air = 'a';
-    	const char habitat;
-};
+    	
+    	int x;
+    	int y;
+}; 
+
+#endif

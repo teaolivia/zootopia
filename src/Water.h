@@ -1,19 +1,19 @@
 // file Water.h
 
-#include "habitat.h"
+#include "cage.h"
 
 #ifndef WATER_H
 #define WATER_H
 
-class Water : public Habitat {
+class Water : public Cage {
 public:
     Water();
     ~Water();
-    
+    char getChar();
+    void printCage(int x, int y);
 private:
-    const char JenisHabitat = 'w';
-
+	char water = 'w';
 };
 
-#endif // WATER_H
+#endif
 

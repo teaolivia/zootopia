@@ -19,13 +19,3 @@ void Habitat::AddHabitat(char c) {
 char Habitat::GetHabitat(int i) {
     return habitat[i];
 }
-
-//bool IsHabitat(char c) {
-//    bool found = false;
-//    int i=0;
-//    while (found==false && i<size) {
-//        if (habitat[i]==c)
-//            found = true;
-//    }
-//    return found;
-//}

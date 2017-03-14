@@ -1,11 +1,15 @@
 #include "Land.h"
 
-Land::Land() : JenisHabitat('a') {
-    Habitat::AddHabitat(JenisHabitat);
+Land::Land() {
+
 }
 
 Land::~Land() {
 
+}
+
+void Land::printCage() {
+	cout << land << endl;
 }
 
 

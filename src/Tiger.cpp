@@ -5,9 +5,13 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 Tiger::Tiger() : LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+=======
+Tiger::Tiger() : LandAnimal(defaultBeratBadan,default_jenis_makanan) {}
+>>>>>>> da3158a40bebe7615f451e88707f661f213ca894
 Tiger::~Tiger(){}
-		
+
 void Tiger::TampilKarakter(){
 	cout << "T" << endl;
 }
