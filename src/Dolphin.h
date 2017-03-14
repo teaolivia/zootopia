@@ -6,14 +6,34 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
+/** @class Dolphin
+     * Real class untuk hewan Dolphin.
+     */
+
 class Dolphin : public WaterAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
-		void Berenang(int lokasi);
-	
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Dolphin.
+         */
+	    Dolphin();
+
+	    /** @brief Destructor.
+         */
+	    ~Dolphin();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Dolphin ke layar.
+         */
+		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Dolphin.
+         */
+		void Bersuara();
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Dolphin.
+         */
+		void Berenang();
+
 	protected:
-	
+
 };
 #endif

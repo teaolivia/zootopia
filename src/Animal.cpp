@@ -3,22 +3,17 @@
 #include "habitat.h"
 
 float Animal::NbMakanan = 0;
-
-//Animal::Animal() : BeratBadan(50000) {
-//    NbMakanan += (0.02*BeratBadan);
-//}
+float Animal::NbSayur = 0;
+float Animal::NbDaging = 0;
 
 Animal::Animal(int bb) : BeratBadan(bb) {
+    if ()
     NbMakanan += (0.02*BeratBadan);
 }
 
 Animal::~Animal() {
 
 }
-
-//Animal::Animal(const Animal& a) : BeratBadan(a.BeratBadan) {
-//
-//}
 
 int Animal::GetBeratBadan() {
     return BeratBadan;
@@ -33,6 +28,6 @@ char Animal::GetHabitatAnimal(int i) {
 }
 
 float Animal::GetNbMakanan() {
-    return NbMakanan;
+    return NbSayur+NbDaging;
 }
 

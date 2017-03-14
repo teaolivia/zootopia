@@ -6,29 +6,52 @@
 
 #include "habitat.h"
 
+/** @class Animal
+     * Abstract base class untuk semua hewan.
+     */
+
 class Animal {
 	public:
-	    //Animal();
-		Animal(int bb); // ctor dengan param beratBadan
+	    /** @brief Constructor.
+         * Menciptakan suatu hewan.
+         * @param bb Nilai berat badan untuk hewan yang ingin diciptakan.
+         */
+		Animal(int bb);
+
+        /** @brief Destructor.
+         */
         ~Animal();
-        //Animal(const Animal& a);
 
 		//friend class Zoo;
 		//friend class Cage<habitat>;
-
+        /** @brief Mengembalikan berat badan hewan.
+         */
 		int GetBeratBadan();
-		//int GetPorsiMakan();
-		virtual void TampilKarakter() = 0;
-		virtual void Bersuara() = 0;
-		//virtual void Bergerak() = 0;
-		// bool isAmfibi();
 
+		//int GetPorsiMakan();
+		/** @brief Menampilkan karakter hewan ke layar.
+         */
+		virtual void TampilKarakter() = 0;
+
+		/** @brief Menampilkan interaksi berupa suara hewan.
+         */
+		virtual void Bersuara() = 0;
+
+		/** @brief Memeriksa apakah habitat yang dimasukkan dimiliki oleh hewan.
+         * @param c Karakter habitat yang ingin diperiksa.
+         */
 		bool IsHabitat(char c);
+
+		/** @brief Mengembalikan habitat yang dimiliki oleh hewan.
+         * @param i Nilai indeks dari array habitat yang ingin dikembalikan.
+         */
 		char GetHabitatAnimal(int i);
 
 		// untuk mengecek liar apa tidaknya
 
 		//virtual void Interract() = 0;
+		/** @brief Mengembalikan jumlah makanan yang diperlukan oleh seluruh hewan yang pernah diciptakan.
+         */
 		static float GetNbMakanan();
 
 	protected:
@@ -38,9 +61,10 @@ class Animal {
 //			const omnivore;
 //		 };
 		const int BeratBadan;
-		//const bool amfibi; //amfibi/tidak
 		//lokasi cell
 		static float NbMakanan;
+		static float NbSayur;
+		static float NbDaging;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 		Habitat habitat_animal;
 

@@ -10,7 +10,7 @@ class WaterAnimal : public virtual Animal {
 		WaterAnimal(int bb);
 		~WaterAnimal();
 
-		virtual void Berenang() = 0;
+		void Berenang();
 
 		virtual void TampilKarakter() = 0;
 		virtual void Bersuara() = 0;
