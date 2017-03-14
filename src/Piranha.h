@@ -7,6 +7,7 @@
 #include "WaterAnimal.h"
 
 #define defaultBeratBadan 1
+#define tipe_makan 'k'
 
 /** @class Piranha
      * Real class untuk hewan Piranha.

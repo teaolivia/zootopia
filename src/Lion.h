@@ -7,6 +7,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 4000
+#define tipe_makan 'k'
 
 /** @class Lion
      * Real class untuk hewan Lion.

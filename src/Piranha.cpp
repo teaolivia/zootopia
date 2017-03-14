@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Piranha::Piranha() : WaterAnimal(defaultBeratBadan) {}
+Piranha::Piranha() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Piranha::~Piranha(){}
 		
 void Piranha::TampilKarakter(){

@@ -6,7 +6,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 2
-
+#define tipe_makan 'k'
 
 /** @class Crocodile
      * Real class untuk hewan Crocodile.

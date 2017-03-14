@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Frog::Frog() : WaterAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Frog::Frog() : WaterAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Frog::~Frog(){}
 		
 void Frog::TampilKarakter(){

@@ -7,6 +7,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 2000
+#define tipe_makan 'k'
 
 /** @class Tiger
      * Real class untuk hewan Tiger.

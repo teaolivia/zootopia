@@ -7,6 +7,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 1000
+#define tipe_makan 'k'
 
 /** @class Cheetah
      * Real class untuk hewan Cheetah.

@@ -7,6 +7,7 @@
 #include "WaterAnimal.h"
 
 #define defaultBeratBadan 500
+#define tipe_makan 'k'
 
 /** @class Dolphin
      * Real class untuk hewan Dolphin.

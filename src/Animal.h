@@ -5,7 +5,6 @@
 #define ANIMAL_H
 
 #include "habitat.h"
-#include <string> //
 
 /** @class Animal
      * Abstract base class untuk semua hewan.

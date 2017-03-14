@@ -7,6 +7,7 @@
 #include "WaterAnimal.h"
 
 #define defaultBeratBadan 2000
+#define tipe_makan 'k'
 
 /** @class Shark
      * Real class untuk hewan Shark.
