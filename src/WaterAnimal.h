@@ -5,7 +5,7 @@
 
 #include "Animal.h"
 
-class WaterAnimal : public Animal {
+class WaterAnimal : public virtual Animal {
 	public:
 		WaterAnimal(int bb);
 		~WaterAnimal();

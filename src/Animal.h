@@ -8,8 +8,10 @@
 
 class Animal {
 	public:
+	    //Animal();
 		Animal(int bb); // ctor dengan param beratBadan
         ~Animal();
+        //Animal(const Animal& a);
 
 		//friend class Zoo;
 		//friend class Cage<habitat>;
@@ -22,6 +24,7 @@ class Animal {
 		// bool isAmfibi();
 
 		bool IsHabitat(char c);
+		char GetHabitatAnimal(int i);
 
 		// untuk mengecek liar apa tidaknya
 

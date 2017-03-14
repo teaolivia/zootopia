@@ -10,7 +10,7 @@ Habitat::Habitat() : size(2) {
 }
 
 void Habitat::AddHabitat(char c) {
-    if (habitat[0]!='\0')
+    if (habitat[0]=='\0')
         habitat[0] = c;
     else
         habitat[1] = c;

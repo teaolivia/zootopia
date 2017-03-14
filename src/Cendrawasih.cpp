@@ -5,9 +5,9 @@
 
 using namespace std;
 
-Cendrawasih::Cendrawasih() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Cendrawasih::Cendrawasih() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan), Animal(defaultBeratBadan) {}
 Cendrawasih::~Cendrawasih(){}
-		
+
 void Cendrawasih::TampilKarakter(){
 	cout << "C" << endl;
 }

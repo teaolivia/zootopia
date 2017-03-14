@@ -13,13 +13,13 @@ class Cendrawasih : public FlyingAnimal, public LandAnimal {
 	public:
 		Cendrawasih();
 		~Cendrawasih();
-		
+
 		void TampilKarakter();
 		void Bersuara();
 		void Terbang(int lokasi);
 		void Berjalan(int lokasi);
-	
+
 	protected:
-	
+
 };
 #endif
