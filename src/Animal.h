@@ -16,8 +16,9 @@ class Animal {
 	    /** @brief Constructor.
          * Menciptakan suatu hewan.
          * @param bb Nilai berat badan untuk hewan yang ingin diciptakan.
+         * @param jm Karakter jenis makanan untuk hewan yang ingin diciptakan.
          */
-		Animal(int bb);
+		Animal(int bb, char jm);
 
         /** @brief Destructor.
          */
@@ -59,12 +60,11 @@ class Animal {
 		//enum jenis_makanan { carnivore, herbivore, omnivore };
 		const int BeratBadan;
 		//lokasi cell
-		static float NbMakanan;
 		static float NbSayur;
 		static float NbDaging;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 		Habitat habitat_animal;
-		char *jenis_makanan;
+		const char jenis_makanan;
 
 };
 #endif

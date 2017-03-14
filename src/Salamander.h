@@ -7,17 +7,39 @@
 
 #define defaultBeratBadan 1
 
+
+/** @class Salamander
+     * Real class untuk hewan Salamander.
+     */
+
 class Salamander : public LandAnimal, public WaterAnimal {
 	public:
-		Salamander();
-		~Salamander();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Salamander.
+         */
+	    Salamander();
+
+	    /** @brief Destructor.
+         */
+	    ~Salamander();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Salamander ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Salamander.
+         */
 		void Bersuara();
-		void Berenang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Salamander.
+         */
 		void Berjalan(int lokasi);
-		
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Salamander.
+		 */
+        void Berenang(int lokasi);
+
 	protected:
-		
+
 };
 #endif

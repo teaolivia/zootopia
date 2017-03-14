@@ -8,17 +8,34 @@
 
 #define defaultBeratBadan 2000
 
+/** @class Panther
+     * Real class untuk hewan Panther.
+     */
+
 class Panther : public LandAnimal {
 	public:
-		Panther();
-		~Panther();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Panther.
+         */
+	    Panther();
+
+	    /** @brief Destructor.
+         */
+	    ~Panther();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Panther ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Panther.
+         */
 		void Bersuara();
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Panther.
+         */
 		void Berjalan(int lokasi);
-		void Berenang(int lokasi);
-	
+
 	protected:
-	
+
 };
 #endif

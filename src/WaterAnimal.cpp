@@ -3,7 +3,7 @@
 #include "WaterAnimal.h"
 #include "habitat.h"
 
-WaterAnimal::WaterAnimal(int bb) : Animal(bb), JenisHabitat('w') {
+WaterAnimal::WaterAnimal(int bb, char jm) : Animal(bb,jm), JenisHabitat('w') {
     habitat_animal.AddHabitat(JenisHabitat);
 }
 

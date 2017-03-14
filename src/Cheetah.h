@@ -8,16 +8,34 @@
 
 #define defaultBeratBadan 1000
 
+/** @class Cheetah
+     * Real class untuk hewan Cheetah.
+     */
+
 class Cheetah : public LandAnimal {
 	public:
-		Cheetah();
-		~Cheetah();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Cheetah.
+         */
+	    Cheetah();
+
+	    /** @brief Destructor.
+         */
+	    ~Cheetah();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Cheetah ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Cheetah.
+         */
 		void Bersuara();
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Cheetah.
+         */
 		void Berjalan(int lokasi);
-	
+
 	protected:
-	
+
 };
 #endif

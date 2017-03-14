@@ -7,17 +7,39 @@
 
 #define defaultBeratBadan 1
 
+
+/** @class Snake
+     * Real class untuk hewan Snake.
+     */
+
 class Snake : public LandAnimal, public WaterAnimal {
 	public:
-		Snake();
-		~Snake();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Snake.
+         */
+	    Snake();
+
+	    /** @brief Destructor.
+         */
+	    ~Snake();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Snake ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Snake.
+         */
 		void Bersuara();
-		void Berenang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Snake.
+         */
 		void Berjalan(int lokasi);
-		
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Snake.
+		 */
+        void Berenang(int lokasi);
+
 	protected:
-		
+
 };
 #endif

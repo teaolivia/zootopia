@@ -7,7 +7,7 @@
 
 class LandAnimal : public virtual Animal {
 	public:
-		LandAnimal(int bb);
+		LandAnimal(int bb, char jm);
 		~LandAnimal();
 
 		void Berjalan();

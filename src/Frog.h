@@ -7,17 +7,39 @@
 
 #define defaultBeratBadan 1
 
+
+/** @class Frog
+     * Real class untuk hewan Frog.
+     */
+
 class Frog : public LandAnimal, public WaterAnimal {
 	public:
-		Frog();
-		~Frog();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Frog.
+         */
+	    Frog();
+
+	    /** @brief Destructor.
+         */
+	    ~Frog();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Frog ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Frog.
+         */
 		void Bersuara();
-		void Berenang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Frog.
+         */
 		void Berjalan(int lokasi);
-		
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Frog.
+		 */
+        void Berenang(int lokasi);
+
 	protected:
-		
+
 };
 #endif

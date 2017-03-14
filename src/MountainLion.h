@@ -8,16 +8,35 @@
 
 #define defaultBeratBadan 2000
 
+/** @class MountainLion
+     * Real class untuk hewan MountainLion.
+     */
+
 class MountainLion : public LandAnimal {
 	public:
-		MountainLion();
-		~MountainLion();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek MountainLion.
+         */
+	    MountainLion();
+
+	    /** @brief Destructor.
+         */
+	    ~MountainLion();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter MountainLion ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara MountainLion.
+         */
 		void Bersuara();
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi MountainLion.
+         */
 		void Berjalan(int lokasi);
-	
+
 	protected:
-	
+
 };
 #endif
+

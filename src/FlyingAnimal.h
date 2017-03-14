@@ -7,7 +7,7 @@
 
 class FlyingAnimal : public virtual Animal {
 	public:
-		FlyingAnimal(int bb);
+		FlyingAnimal(int bb, char jm);
 		~FlyingAnimal();
 
 		void Terbang();

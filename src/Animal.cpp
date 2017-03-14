@@ -2,17 +2,20 @@
 #include "Animal.h"
 #include "habitat.h"
 
-float Animal::NbMakanan = 0;
 float Animal::NbSayur = 0;
 float Animal::NbDaging = 0;
 
-Animal::Animal(int bb) : BeratBadan(bb) {
-    if ()
-    NbMakanan += (0.02*BeratBadan);
-    jenis_makanan = new char[2];
-    for (int i = 0; i < 2; i++) {
-		jenis_makanan = '\0';
-	}
+Animal::Animal(int bb, char jm) : BeratBadan(bb), jenis_makanan(jm) {
+    if (jenis_makanan=='k') {
+        NbDaging += (0.02*BeratBadan);
+    }
+    else if (jenis_makanan=='h') {
+        NbSayur += (0.02*BeratBadan);
+    }
+    else if (jenis_makanan=='o') {
+        NbDaging += (0.01*BeratBadan);
+        NbSayur += (0.01*BeratBadan);
+    }
 }
 
 Animal::~Animal() {

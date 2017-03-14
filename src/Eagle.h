@@ -9,17 +9,39 @@
 
 #define defaultBeratBadan 3
 
-class Eagle : public FlyingAnimal, public LandAnimal {
+
+/** @class Eagle
+     * Real class untuk hewan Eagle.
+     */
+
+class Eagle : public LandAnimal, public FlyingAnimal {
 	public:
-		Eagle();
-		~Eagle();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Eagle.
+         */
+	    Eagle();
+
+	    /** @brief Destructor.
+         */
+	    ~Eagle();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Eagle ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Eagle.
+         */
 		void Bersuara();
-		void Terbang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Eagle.
+         */
 		void Berjalan(int lokasi);
-	
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Eagle.
+		 */
+        void Terbang(int lokasi);
+
 	protected:
-	
+
 };
 #endif
