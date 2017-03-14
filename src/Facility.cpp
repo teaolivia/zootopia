@@ -5,8 +5,9 @@ Facility::Facility() {
 	area = 0;
 }
 
-Facility::Facility(int area) {
-	this->area;
+Facility::Facility(int length, int width) {
+	this->length = length;
+  this->width = width;
 }
 
 Facility::Facility(const Facility&) {

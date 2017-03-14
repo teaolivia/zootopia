@@ -1,38 +1,28 @@
 #include "Cage.h"
-#include "Land.h"
-#include "Water.h"
-#include "Air.h"
 
-template <class Habitat>
-int Cage<Habitat>::countCell = 0;
 
-template <class Habitat>
-Cage<Habitat>::Cage() {
+// template <class habitat>
+// int Cage<habitat>::countCell = 0;
+
+template <class habitat>
+Cage<habitat>::Cage() {
 
 }
 
-template <class Habitat>
-Cage<Habitat>::~Cage() {
+template <class habitat>
+Cage<habitat>::~Cage() {
 
 }
 
-template <class Habitat>
-Cage<Habitat>::Cage(Habitat const& h) {
+template <class habitat>
+Cage<habitat>::Cage(habitat const& h) {
 
 }
 
-// template <class Habitat>
-// Habitat Cage<Land>::getLand() {
-// 	return Land;
-// }
+template <class habitat>
+bool Cage<habitat>::CageCollisionCheck() {
+	return Cell::CollisionCheck();
+}
 
-// template <class Habitat>
-// Habitat Cage<Water>::getWater() {
-// 	return Water;
-// }
 
-// template <class Habitat>
-// Habitat Cage<Air>::getAir() {
-// 	return Air;
-// }
 

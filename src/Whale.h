@@ -18,6 +18,5 @@ class Whale : public WaterAnimal {
 		void Berenang(int lokasi);
 
 	protected:
-
 };
 #endif

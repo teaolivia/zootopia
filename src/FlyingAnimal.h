@@ -5,15 +5,20 @@
 
 #include "Animal.h"
 
-class FlyingAnimal : public Animal {
+class FlyingAnimal : public virtual Animal {
 	public:
-		FlyingAnimal();
+		FlyingAnimal(int bb);
 		~FlyingAnimal();
 
-		virtual void Terbang() = 0;
+		void Terbang();
+
+		virtual void TampilKarakter() = 0;
+		virtual void Bersuara() = 0;
 
 
 	protected:
+   	    const char JenisHabitat = 'a';
+
 
 };
 #endif

@@ -4,14 +4,11 @@
 #define WATERANIMAL_H
 
 #include "Animal.h"
-#include "Water.h"
 
-class WaterAnimal : public Animal {
+class WaterAnimal : public virtual Animal {
 	public:
 		WaterAnimal(int bb);
 		~WaterAnimal();
-
-		char GetJenisHabitat();
 
 		virtual void Berenang() = 0;
 
@@ -19,7 +16,7 @@ class WaterAnimal : public Animal {
 		virtual void Bersuara() = 0;
 
 	protected:
-	    Water *w;
+	    const char JenisHabitat = 'w';
 
 };
 #endif
