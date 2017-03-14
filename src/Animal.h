@@ -5,6 +5,7 @@
 #define ANIMAL_H
 
 #include "habitat.h"
+#include <string> //
 
 /** @class Animal
      * Abstract base class untuk semua hewan.
@@ -55,11 +56,7 @@ class Animal {
 		static float GetNbMakanan();
 
 	protected:
-//		enum eatingType {
-//			const carnivore;
-//			const herbivore;
-//			const omnivore;
-//		 };
+		//enum jenis_makanan { carnivore, herbivore, omnivore };
 		const int BeratBadan;
 		//lokasi cell
 		static float NbMakanan;
@@ -67,6 +64,7 @@ class Animal {
 		static float NbDaging;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 		Habitat habitat_animal;
+		char *jenis_makanan;
 
 };
 #endif

@@ -6,6 +6,8 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
+#define defaultBeratBadan 500
+
 /** @class Dolphin
      * Real class untuk hewan Dolphin.
      */
@@ -32,6 +34,7 @@ class Dolphin : public WaterAnimal {
 		/** @brief Mengimplementasikan method untuk bergerak bagi Dolphin.
          */
 		void Berenang();
+
 
 	protected:
 

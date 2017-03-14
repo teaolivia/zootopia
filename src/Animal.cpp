@@ -9,6 +9,10 @@ float Animal::NbDaging = 0;
 Animal::Animal(int bb) : BeratBadan(bb) {
     if ()
     NbMakanan += (0.02*BeratBadan);
+    jenis_makanan = new char[2];
+    for (int i = 0; i < 2; i++) {
+		jenis_makanan = '\0';
+	}
 }
 
 Animal::~Animal() {

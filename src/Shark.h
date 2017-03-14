@@ -6,11 +6,15 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
+#define defaultBeratBadan 2000
+
 class Shark : public WaterAnimal {
 	public:
-		//void TampilKarakter();
-		//void Bersuara();
-		//void Bergerak();
+		Shark();
+		~Shark();
+		
+		void TampilKarakter();
+		void Bersuara();
 		void Berenang(int lokasi);
 	
 	protected:

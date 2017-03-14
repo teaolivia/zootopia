@@ -18,6 +18,7 @@ int main() {
     cout << "ishabitat air: " << w.IsHabitat('a') << endl;
     cout << "habitat1: " << w.GetHabitatAnimal(0) << endl;
     cout << "habitat2: " << w.GetHabitatAnimal(1) << endl;
+    cout << "jenismakanan: " << w.GetJenisMakanan() << endl;
 
     return 0;
 

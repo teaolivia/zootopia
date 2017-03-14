@@ -1,16 +1,16 @@
-#ifndef	FROG_H
-#define FROG_H
+#ifndef	CROCODILE_H
+#define CROCODILE_H
 
 #include "Animal.h"
 #include "WaterAnimal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 1
+#define defaultBeratBadan 2
 
-class Frog : public LandAnimal, public WaterAnimal {
+class Crocodile : public LandAnimal, public WaterAnimal {
 	public:
-		Frog();
-		~Frog();
+		Crocodile();
+		~Crocodile();
 		
 		void TampilKarakter();
 		void Bersuara();

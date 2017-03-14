@@ -33,7 +33,7 @@ class Whale : public WaterAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Whale.
          */
-		void Berenang();
+		void Berenang(int lokasi);
 
 	protected:
 };

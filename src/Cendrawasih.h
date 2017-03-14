@@ -18,8 +18,9 @@ class Cendrawasih : public FlyingAnimal, public LandAnimal {
 		void Bersuara();
 		void Terbang(int lokasi);
 		void Berjalan(int lokasi);
+		char GetJenisMakanan(); //
 
 	protected:
-
+		
 };
 #endif
