@@ -1,18 +1,17 @@
 // file Land.h
 
-#include "habitat.h"
+#include "cage.h"
 
 #ifndef LAND_H
 #define LAND_H
 
-class Land {
+class Land : public Cage {
 public:
     Land();
     ~Land();
-
+    void printCage();
 private:
-    const char JenisHabitat = 'l';
-
+	const char land = 'l';
 };
 
-#endif // LAND_H
+#endif

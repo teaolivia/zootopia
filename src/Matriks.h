@@ -1,11 +1,9 @@
 #ifndef MATRIKS_H
 #define MATRIKS_H
 #define DEFSIZE 100
+#define nil NULL
 
-#include "cell.h"
 #include <iostream>
-
-class Cell;
 
 class Matriks {
   public:
@@ -18,7 +16,7 @@ class Matriks {
     Matriks(int n, int m);
 
     // cctor
-    Matriks(const Matriks& m);
+    Matriks(Matriks& m);
 
     // dtor
     ~Matriks();
@@ -49,22 +47,20 @@ class Matriks {
     friend std::ostream& operator<<(std::ostream &os, const Matriks& m);
 
     // isikan nilai v di posisi data[i,j], i dan j terdefinisi
-    void SetData (int i, int j, int v);
+    void SetData (int i, int j, char v);
 
     // ambil elemen v di posisi data[i,j], i dan j terdefinisi
-    Cell GetData (int i, int j);
+    char GetData (int i, int j);
 
     // Mengembalikan n_brs
     int GetBrs();
     // Mengembalikan n_kol
     int GetKol();
 
-  protected:
+  private:
     const int n_brs; // Banyaknya baris, n_brs > 0
     const int n_kol; // Banyaknya kolom, n_kol > 0
-    const char DEF_CHAR = ' ';
- // Elemen matriks
-    Cell **cell;
+    char ** cell; // Elemen matriks
 };
 
 #endif

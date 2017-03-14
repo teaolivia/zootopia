@@ -1,19 +1,18 @@
 // file Air.h
 
-#include "habitat.h"
+#include "cage.h"
 
 #ifndef AIR_H
 #define AIR_H
 
-class Air : public Habitat {
+class Air : public Cage {
 public:
     Air();
     ~Air();
-
+    void printCage(int x, int y);
 private:
-    const char JenisHabitat = 'a';
-
+	const char air = 'a';
 };
 
-#endif // AIR_H
+#endif
 

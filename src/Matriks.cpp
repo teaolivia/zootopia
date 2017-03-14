@@ -6,11 +6,11 @@ using namespace std;
     // ctor inisialisasi n_brs dan n_kol dengan ctor initialization list, N=M=defsize
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(): n_brs(DEFSIZE), n_kol(DEFSIZE) {
-		cell.getCell() -> new Cell* [n_brs];
+		cell = new char* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			cell.getCell()[i] -> new Cell [n_kol];
+			cell[i] = new char [n_kol];
 			for (int j=0; j<= n_kol; j++) {
-				cell.getCell()[i][j] = cdef;
+				cell[i][j] = 0;
 			}
 		}
     }
@@ -18,25 +18,25 @@ using namespace std;
     // ctor dengan param n (banyaknya baris) dan m (banyaknya kolom)
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(int n, int m): n_brs(n), n_kol(n) {
-		cell.getCell() -> new Cell* [n_brs];
+		cell = new char* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			cell.getCell()[i] -> new Cell [n_kol];
+			cell[i] = new char [n_kol];
 			for (int j=0; j<= n_kol; j++) {
-				cell.getCell()[i][j] = cdef;
+				cell[i][j] = 0;
 			}
 		}
 	}
 
     // cctor
-    Matriks::Matriks(const Matriks& m) {
+    Matriks::Matriks(Matriks& m) {
 		int i,j;
 		
 		n_brs = m.n_brs;
 		n_kol = m.n_kol;
-		cell = new Cell [n_brs][n_kol];
+		cell = new char [n_brs][n_kol];
 		
 		for (i=0; i<=n_brs; i++) {
-			cell[i] = m.cell[i]
+			cell[i] = m.cell[i];
 			for (j=0; j<=n_kol; j++) {
 				cell[j] = m.cell[j];
 			}
@@ -45,7 +45,7 @@ using namespace std;
 
     // dtor
     Matriks::~Matriks() {
-		delete [][] cell.getCell();
+		delete [][] cell;
 		n_brs = 0;
 		n_kol = 0;
 	}
@@ -58,14 +58,14 @@ using namespace std;
 		
 		delete [][] cell;
 		
-		cell = new int [n_brs][n_kol];
+		cell= new char [n_brs][n_kol];
 		
 		if (IsEqSize(m1,m2)) {
 			m1.n_brs = m2.n_brs;
 			m1.n_kol = m2.n_kol;
 			for (i=0; i<=n_brs; i++) {
 				for (j=0; j<=n_kol; j++) {
-						m1.cell = m2.cell;
+						m1.cell= m2.cell;
 				}
 			}
 		} else {
@@ -74,7 +74,7 @@ using namespace std;
 			
 			for (i=0; i<=n_brs; i++) {
 				for (j=0; j<=n_kol; j++) {
-						cell = m.cell;
+						cell= m.cell;
 				}
 			}	
 		}		
@@ -86,7 +86,7 @@ using namespace std;
 		return ((m1.n_brs == m2.n_brs)&&(m1.n_kol== m2.n_kol));
 	}
 
-    // operator+ penjumlahan nilai b dari kedua matriksyg posisinya sama
+    // operator+ penjumlahan nilai celldari kedua matriksyg posisinya sama
     // Mhasil(i,j) = M1 (i,j) + M2(i,j)
     // Proses : jika ukuran m2 tak sama dengan current object,
     // yang tak beririsan tidak dijumlahkan, hanya dicopy
@@ -99,7 +99,7 @@ using namespace std;
 		mhasil.j = m1.j + m2.j;		
 	}
 
-    // operator* untuk melakukan perkalian thd setiap nilai b yang posisinya sama
+    // operator* untuk melakukan perkalian thd setiap nilai cellyang posisinya sama
     // Mhasil(i,j) = M1 (i,j) * M2(i,j)
     // jika matriks ukurannya tak sama, yang tak beririsan tak dikalikan
     // hasilnya adalah matriks yang lebih besar ukurannya
@@ -124,12 +124,12 @@ using namespace std;
 	}
 
     // isikan nilai v di posisi data[i,j], i dan j terdefinisi
-    void Matriks::SetData (int i, int j, int v) {
+    void Matriks::SetData (int i, int j, char v) {
 		Matriks(i,j)=v;
 	}
 
     // ambil elemen v di posisi data[i,j], i dan j terdefinisi
-    Cell Matriks::GetData (int i, int j) {
+    char Matriks::GetData (int i, int j) {
 		return Matriks(i,j);
 	}
 
