@@ -5,9 +5,9 @@
 
 using namespace std;
 
-Tiger::Tiger() : LandAnimal(defaultBeratBadan) {}
+Tiger::Tiger() : LandAnimal(defaultBeratBadan,default_jenis_makanan) {}
 Tiger::~Tiger(){}
-		
+
 void Tiger::TampilKarakter(){
 	cout << "T" << endl;
 }

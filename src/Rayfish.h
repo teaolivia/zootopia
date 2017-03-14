@@ -7,6 +7,7 @@
 #include "WaterAnimal.h"
 
 #define defaultBeratBadan 1
+#define default_jenis_makanan 'k'
 
 /** @class Rayfish
      * Real class untuk hewan Rayfish.

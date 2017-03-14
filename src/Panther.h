@@ -7,6 +7,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 2000
+#define default_jenis_makanan 'k'
 
 /** @class Panther
      * Real class untuk hewan Panther.

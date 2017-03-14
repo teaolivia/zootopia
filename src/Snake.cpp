@@ -5,9 +5,9 @@
 
 using namespace std;
 
-Snake::Snake() : WaterAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Snake::Snake() : WaterAnimal(defaultBeratBadan,default_jenis_makanan), LandAnimal(defaultBeratBadan,default_jenis_makanan) {}
 Snake::~Snake(){}
-		
+
 void Snake::TampilKarakter(){
 	cout << "S" << endl;
 }

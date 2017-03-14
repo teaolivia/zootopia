@@ -7,6 +7,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 10000
+#define default_jenis_makanan 'h'
 
 /** @class Elephant
      * Real class untuk hewan Elephant.

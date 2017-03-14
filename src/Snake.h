@@ -6,6 +6,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 1
+#define default_jenis_makanan 'k'
 
 
 /** @class Snake

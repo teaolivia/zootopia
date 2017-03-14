@@ -8,6 +8,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 3
+#define default_jenis_makanan 'h'
 
 
 /** @class Dove

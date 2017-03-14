@@ -8,6 +8,7 @@
 #include "LandAnimal.h"
 
 #define defaultBeratBadan 2
+#define default_jenis_makanan 'h'
 
 /** @class Parrot
      * Real class untuk hewan Parrot.
