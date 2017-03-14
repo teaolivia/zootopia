@@ -8,7 +8,7 @@ class Facility : public Cell {
 	public:
 		// 5 sekawan
 		Facility();
-		Facility(int area);
+		Facility(int length, int width);
 		Facility(const Facility&);
 		~Facility();
 		Facility& operator=(const Facility&);
