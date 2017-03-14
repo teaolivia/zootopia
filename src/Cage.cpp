@@ -19,10 +19,7 @@ Cage<habitat>::Cage(habitat const& h) {
 
 }
 
-template <class habitat>
-bool Cage<habitat>::CageCollisionCheck() {
-	return Cell::CollisionCheck();
-}
+
 
 
 

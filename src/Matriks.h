@@ -2,7 +2,10 @@
 #define MATRIKS_H
 #define DEFSIZE 100
 
+#include "cell.h"
 #include <iostream>
+
+class Cell;
 
 class Matriks {
   public:
@@ -49,7 +52,7 @@ class Matriks {
     void SetData (int i, int j, int v);
 
     // ambil elemen v di posisi data[i,j], i dan j terdefinisi
-    int GetData (int i, int j);
+    Cell GetData (int i, int j);
 
     // Mengembalikan n_brs
     int GetBrs();
@@ -59,7 +62,9 @@ class Matriks {
   protected:
     const int n_brs; // Banyaknya baris, n_brs > 0
     const int n_kol; // Banyaknya kolom, n_kol > 0
-    int ** b; // Elemen matriks
+    const char DEF_CHAR = ' ';
+ // Elemen matriks
+    Cell **cell;
 };
 
 #endif

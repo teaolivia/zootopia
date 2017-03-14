@@ -6,11 +6,11 @@ using namespace std;
     // ctor inisialisasi n_brs dan n_kol dengan ctor initialization list, N=M=defsize
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(): n_brs(DEFSIZE), n_kol(DEFSIZE) {
-		b -> new int* [n_brs];
+		cell.getCell() -> new Cell* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			b[i] -> new int [n_kol];
+			cell.getCell()[i] -> new Cell [n_kol];
 			for (int j=0; j<= n_kol; j++) {
-				b[i][j] = 0;
+				cell.getCell()[i][j] = cdef;
 			}
 		}
     }
@@ -18,11 +18,11 @@ using namespace std;
     // ctor dengan param n (banyaknya baris) dan m (banyaknya kolom)
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(int n, int m): n_brs(n), n_kol(n) {
-		b -> new int* [n_brs];
+		cell.getCell() -> new Cell* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			b[i] -> new int [n_kol];
+			cell.getCell()[i] -> new Cell [n_kol];
 			for (int j=0; j<= n_kol; j++) {
-				b[i][j] = 0;
+				cell.getCell()[i][j] = cdef;
 			}
 		}
 	}
@@ -33,19 +33,19 @@ using namespace std;
 		
 		n_brs = m.n_brs;
 		n_kol = m.n_kol;
-		b = new int [n_brs][n_kol];
+		cell = new Cell [n_brs][n_kol];
 		
 		for (i=0; i<=n_brs; i++) {
-			b[i] = m.b[i]
+			cell[i] = m.cell[i]
 			for (j=0; j<=n_kol; j++) {
-				b[j] = m.b[j];
+				cell[j] = m.cell[j];
 			}
 		}
 	}
 
     // dtor
     Matriks::~Matriks() {
-		delete [][] b;
+		delete [][] cell.getCell();
 		n_brs = 0;
 		n_kol = 0;
 	}
@@ -56,16 +56,16 @@ using namespace std;
 		Matriks& m1,m2;
 		int i,j;
 		
-		delete [][] b;
+		delete [][] cell;
 		
-		b = new int [n_brs][n_kol];
+		cell = new int [n_brs][n_kol];
 		
 		if (IsEqSize(m1,m2)) {
 			m1.n_brs = m2.n_brs;
 			m1.n_kol = m2.n_kol;
 			for (i=0; i<=n_brs; i++) {
 				for (j=0; j<=n_kol; j++) {
-						m1.b = m2.b;
+						m1.cell = m2.cell;
 				}
 			}
 		} else {
@@ -74,7 +74,7 @@ using namespace std;
 			
 			for (i=0; i<=n_brs; i++) {
 				for (j=0; j<=n_kol; j++) {
-						b = m.b;
+						cell = m.cell;
 				}
 			}	
 		}		
@@ -129,7 +129,7 @@ using namespace std;
 	}
 
     // ambil elemen v di posisi data[i,j], i dan j terdefinisi
-    int Matriks::GetData (int i, int j) {
+    Cell Matriks::GetData (int i, int j) {
 		return Matriks(i,j);
 	}
 

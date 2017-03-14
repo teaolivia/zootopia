@@ -20,7 +20,6 @@ class Cage : public Cell {
 		// Habitat& getWater();
 		// Habitat& getAir();
 		friend class Cell;
-		bool CageCollisionCheck();
 		// fungsi untuk testing
 
 

@@ -2,18 +2,19 @@
 
 using namespace std;
 
+class Matriks;
+class Zoo;
+
 class Cell {
 	public:
     friend class Zoo;
+    friend class Matriks;
     //getter setter
-    int GetX();
-    int GetY();
+    char GetCell();
   
 	protected:
-		// generik
+	const char char_cell = 'c';
 
 		//Road<> road;
     // location
-    int x;
-    int y;
 };
