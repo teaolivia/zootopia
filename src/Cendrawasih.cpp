@@ -5,7 +5,11 @@
 
 using namespace std;
 
-Cendrawasih::Cendrawasih() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan), Animal(defaultBeratBadan) {}
+Cendrawasih::Cendrawasih() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan), Animal(defaultBeratBadan) {
+	//jenis_makanan jm = herbivore; //
+	jenis_makanan[0] = 'h';
+	jenis_makanan[1] = '\0';
+}
 Cendrawasih::~Cendrawasih(){}
 
 void Cendrawasih::TampilKarakter(){
@@ -22,3 +26,6 @@ void Cendrawasih::Berjalan(int lokasi){
 	//if tidak menembus batas
 		lokasi++;
 }
+char Cendrawasih::GetJenisMakanan(){ //
+	return jenis_makanan[0];//
+} //

@@ -5,6 +5,7 @@
 #define ANIMAL_H
 
 #include "habitat.h"
+#include <string> //
 
 class Animal {
 	public:
@@ -32,17 +33,14 @@ class Animal {
 		static float GetNbMakanan();
 
 	protected:
-//		enum eatingType {
-//			const carnivore;
-//			const herbivore;
-//			const omnivore;
-//		 };
+		//enum jenis_makanan { carnivore, herbivore, omnivore };
 		const int BeratBadan;
 		//const bool amfibi; //amfibi/tidak
 		//lokasi cell
 		static float NbMakanan;
 		//lokasi cel--> friend class sama cage aja, ntr dipanggil di cage?
 		Habitat habitat_animal;
+		char *jenis_makanan;
 
 };
 #endif
