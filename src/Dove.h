@@ -9,17 +9,39 @@
 
 #define defaultBeratBadan 3
 
-class Dove : public FlyingAnimal, public LandAnimal {
+
+/** @class Dove
+     * Real class untuk hewan Dove.
+     */
+
+class Dove : public LandAnimal, public FlyingAnimal {
 	public:
-		Dove();
-		~Dove();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Dove.
+         */
+	    Dove();
+
+	    /** @brief Destructor.
+         */
+	    ~Dove();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Dove ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Dove.
+         */
 		void Bersuara();
-		void Terbang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Dove.
+         */
 		void Berjalan(int lokasi);
-	
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Dove.
+		 */
+        void Terbang(int lokasi);
+
 	protected:
-	
+
 };
 #endif

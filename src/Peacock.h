@@ -9,17 +9,38 @@
 
 #define defaultBeratBadan 3
 
-class Peacock : public FlyingAnimal, public LandAnimal {
+/** @class Peacock
+     * Real class untuk hewan Peacock.
+     */
+
+class Peacock : public LandAnimal, public FlyingAnimal {
 	public:
-		Peacock();
-		~Peacock();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Peacock.
+         */
+	    Peacock();
+
+	    /** @brief Destructor.
+         */
+	    ~Peacock();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Peacock ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Peacock.
+         */
 		void Bersuara();
-		void Terbang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Peacock.
+         */
 		void Berjalan(int lokasi);
-	
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Peacock.
+		 */
+        void Terbang(int lokasi);
+
 	protected:
-	
+
 };
 #endif

@@ -9,15 +9,37 @@
 
 #define defaultBeratBadan 3
 
-class Cendrawasih : public FlyingAnimal, public LandAnimal {
-	public:
-		Cendrawasih();
-		~Cendrawasih();
 
+/** @class Cendrawasih
+     * Real class untuk hewan Cendrawasih.
+     */
+
+class Cendrawasih : public LandAnimal, public FlyingAnimal {
+	public:
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Cendrawasih.
+         */
+	    Cendrawasih();
+
+	    /** @brief Destructor.
+         */
+	    ~Cendrawasih();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Cendrawasih ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Cendrawasih.
+         */
 		void Bersuara();
-		void Terbang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Cendrawasih.
+         */
 		void Berjalan(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Cendrawasih.
+		 */
+        void Terbang(int lokasi);
 
 	protected:
 

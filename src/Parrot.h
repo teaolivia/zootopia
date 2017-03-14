@@ -9,17 +9,38 @@
 
 #define defaultBeratBadan 2
 
-class Parrot : public FlyingAnimal, public LandAnimal {
+/** @class Parrot
+     * Real class untuk hewan Parrot.
+     */
+
+class Parrot : public LandAnimal, public FlyingAnimal {
 	public:
-		Parrot();
-		~Parrot();
-		
+	    /** @brief Constructor.
+         * Menciptakan suatu objek Parrot.
+         */
+	    Parrot();
+
+	    /** @brief Destructor.
+         */
+	    ~Parrot();
+
+	    /** @brief Mengimplementasikan method untuk menampilkan karakter Parrot ke layar.
+         */
 		void TampilKarakter();
+
+		/** @brief Mengimplementasikan method untuk menampilkan interaksi berupa suara Parrot.
+         */
 		void Bersuara();
-		void Terbang(int lokasi);
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Parrot.
+         */
 		void Berjalan(int lokasi);
-	
+
+		/** @brief Mengimplementasikan method untuk bergerak bagi Parrot.
+		 */
+        void Terbang(int lokasi);
+
 	protected:
-	
+
 };
 #endif
