@@ -1,11 +1,11 @@
 #include "Air.h"
 
 Air::Air() {
-
+	cageair = new Matriks(x,y);
 }
 
 Air::~Air() {
-
+	delete [] cageair;
 }
 
 void Air::printCage() {
