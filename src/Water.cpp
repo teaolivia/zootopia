@@ -1,3 +1,4 @@
+#include "cage.h"
 #include "Water.h"
 #include <iostream>
 using namespace std;
@@ -7,7 +8,7 @@ cout << "asd";
 }
 
 Water::~Water() {
-
+	
 }
 
 char Water::getChar() {
@@ -15,5 +16,5 @@ char Water::getChar() {
 }
 
 void Water::printCage(int x, int y) {
-	cout << getChar();
+	cout << getChar() << endl;
 }

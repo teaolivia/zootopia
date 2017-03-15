@@ -1,7 +1,7 @@
 #include "cage.h"
-#include "Water.h"
-#include "Air.h"
-#include "Land.h"
+#include "water.h"
+#include "air.h"
+#include "land.h"
 #include <iostream>
 
 using namespace std;

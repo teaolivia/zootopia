@@ -13,10 +13,25 @@
   */
 class Cage {
 	public:
+        /** @class Cage
+          * Kelas yang menciptakan cage dengan ukuran tertentu
+          */
 		Cage();
+        /** @class Cage
+          * Kelas yang menciptakan cage dengan ukuran tertentu
+          */
         Cage(int x,int y);
+        /** @class Cage
+          * Kelas yang menciptakan cage dengan ukuran tertentu
+          */
 		~Cage();
+        /** @class Cage
+          * Kelas yang menciptakan cage dengan ukuran tertentu
+          */
         virtual char getChar();
+        /** @class Cage
+          * Kelas yang menciptakan cage dengan ukuran tertentu
+          */
 		virtual void printCage(int x,int y);
 
 	protected:

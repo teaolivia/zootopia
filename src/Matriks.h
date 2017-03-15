@@ -60,6 +60,8 @@ class Matriks {
   private:
     const int n_brs; // Banyaknya baris, n_brs > 0
     const int n_kol; // Banyaknya kolom, n_kol > 0
+    int i;
+    int j;
     char ** cell; // Elemen matriks
 };
 

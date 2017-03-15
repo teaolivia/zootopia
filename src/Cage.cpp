@@ -14,6 +14,10 @@ Cage::Cage(int x, int y) {
 	// matriks dengan parameter
 }
 
+Cage::~Cage() {
+	// tes
+}
+
 char Cage::getChar() {
 
 }

@@ -45,9 +45,12 @@ using namespace std;
 
     // dtor
     Matriks::~Matriks() {
-		delete [][] cell;
-		n_brs = 0;
-		n_kol = 0;
+		
+		for (int j=0; j<n_brs; j++) {
+			delete [] cell[j];
+			for (int j=0; j<n_brs; i++) 
+				delete [] cell[i];	
+		}
 	}
 
     // operator= menjamin tidak bitwise copy.
@@ -56,7 +59,12 @@ using namespace std;
 		Matriks& m1,m2;
 		int i,j;
 		
-		delete [][] cell;
+		for (j=0; j<=n_kol; j++) {
+				delete [] cell[j];
+			for (i=0; i<=n_brs; i++) {
+				delete [] cell[j];
+			}
+		}
 		
 		cell= new char [n_brs][n_kol];
 		
@@ -93,7 +101,8 @@ using namespace std;
     // hasilnya adalah matriks yang lebih besar
     // ditulis sebagai function member
     Matriks& Matriks::operator+ (Matriks m2) {
-		Matriks& mhasil
+		Matriks mhasil;
+		Matriks m1;
 		int i,j;
 		mhasil.i = m1.i + m2.i;
 		mhasil.j = m1.j + m2.j;		
