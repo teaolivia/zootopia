@@ -2,7 +2,7 @@
 #define CAGE_H
 
 #include <iostream>
-#include "Animal.h"
+#include "matriks.h"
 // #include "Land.h"
 // #include "Water.h"
 // #include "Air.h"
@@ -35,9 +35,8 @@ class Cage {
 		virtual void printCage(int x,int y);
 
 	protected:
-		Animal* animal;
     	// Habitat
-    	
+        Matriks cage;
     	int x;
     	int y;
 }; 

@@ -5,9 +5,9 @@ using namespace std;
 // template <class habitat>
 // int Cage<habitat>::countCell = 0;
 
-Cage::Cage() {
+Cage::Cage() : cage() {
 	// bikin matriks di sini
-	cout << "asd";
+	cage = Matriks();
 }
 
 Cage::Cage(int x, int y) {
@@ -24,6 +24,7 @@ char Cage::getChar() {
 
 void Cage::printCage(int x,int y) {
 	//cout << "Tes"<<endl;
+
 }
 
 
