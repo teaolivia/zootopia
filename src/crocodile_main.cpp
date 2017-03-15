@@ -1,13 +1,13 @@
 #include "animal.h"
 #include "land_animal.h"
-#include "flying_animal.h"
-#include "Cendrawasih.h"
+#include "water_animal.h"
+#include "Crocodile.h"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    Cendrawasih w;
+    Crocodile w;
 
     cout << "beratbadan: " << w.GetBeratBadan() << endl;
 

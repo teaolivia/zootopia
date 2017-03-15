@@ -1,9 +1,9 @@
-//File "WaterAnimal.h"
+//File "water_animal.h"
 
 #ifndef	WATERANIMAL_H
 #define WATERANIMAL_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class WaterAnimal
      * Kelas untuk hewan yang habitatnya di air. Turunan dari kelas Animal.

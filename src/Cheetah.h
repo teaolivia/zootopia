@@ -3,8 +3,8 @@
 #ifndef	CHEETAH_H
 #define CHEETAH_H
 
-#include "Animal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 1000
 #define tipe_makan 'k'

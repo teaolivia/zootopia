@@ -1,5 +1,5 @@
-#include "Animal.h"
-#include "WaterAnimal.h"
+#include "animal.h"
+#include "water_animal.h"
 #include "Whale.h"
 #include <iostream>
 using namespace std;

@@ -1,13 +1,13 @@
 #include "animal.h"
 #include "land_animal.h"
 #include "flying_animal.h"
-#include "Cendrawasih.h"
+#include "Parrot.h"
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    Cendrawasih w;
+    Parrot w;
 
     cout << "beratbadan: " << w.GetBeratBadan() << endl;
 
@@ -18,6 +18,7 @@ int main() {
     cout << "Lokasi awal y: " << w.GetLokasi(1) << endl;
 
     w.Berjalan();
+    w.Terbang();
 
 
     cout << "Lokasi akhir x: " << w.GetLokasi(0) << endl;

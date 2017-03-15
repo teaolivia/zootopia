@@ -3,8 +3,8 @@
 #ifndef	LION_H
 #define LION_H
 
-#include "Animal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 4000
 #define tipe_makan 'k'

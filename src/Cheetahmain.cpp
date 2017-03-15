@@ -1,6 +1,6 @@
 #include "Cheetah.h"
-#include "Animal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "land_animal.h"
 
 #include <iostream>
 using namespace std;

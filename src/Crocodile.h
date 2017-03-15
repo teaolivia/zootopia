@@ -1,9 +1,9 @@
 #ifndef	CROCODILE_H
 #define CROCODILE_H
 
-#include "Animal.h"
-#include "WaterAnimal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "water_animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 2
 #define tipe_makan 'k'

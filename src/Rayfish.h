@@ -3,8 +3,8 @@
 #ifndef	RAYFISH_H
 #define RAYFISH_H
 
-#include "Animal.h"
-#include "WaterAnimal.h"
+#include "animal.h"
+#include "water_animal.h"
 
 #define defaultberat_badan 1
 #define tipe_makan 'k'

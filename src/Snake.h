@@ -1,9 +1,9 @@
 #ifndef	SNAKE_H
 #define SNAKE_H
 
-#include "Animal.h"
-#include "WaterAnimal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "water_animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 1
 #define tipe_makan 'k'
