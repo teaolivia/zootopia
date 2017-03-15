@@ -6,12 +6,9 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 1000
-<<<<<<< HEAD
+#define defaultberat_badan 1000
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
+#define liar true
 
 /** @class Cheetah
      * Real class untuk hewan Cheetah.
@@ -21,8 +18,10 @@ class Cheetah : public LandAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Cheetah.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Cheetah();
+	    Cheetah(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -38,7 +37,7 @@ class Cheetah : public LandAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Cheetah.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 	protected:
 

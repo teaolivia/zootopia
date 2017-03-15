@@ -5,20 +5,20 @@
 
 using namespace std;
 
-Dove::Dove() : FlyingAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Dove::Dove(int x, int y) : FlyingAnimal(defaultberat_badan, tipe_makan, liar,x,y), LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar) {}
 Dove::~Dove(){}
-		
+
 void Dove::TampilKarakter(){
 	cout << "D" << endl;
 }
 void Dove::Bersuara(){
 	cout << "Ove, ove, ove, I'm a dove." << endl;
 }
-void Dove::Terbang(int lokasi){
+void Dove::Terbang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(-1,-1);
 }
-void Dove::Berjalan(int lokasi){
+void Dove::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(-1,1);
 }

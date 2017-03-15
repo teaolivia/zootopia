@@ -5,17 +5,16 @@
 
 using namespace std;
 
-Cheetah::Cheetah() : LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Cheetah::Cheetah(int x, int y) : LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 
 Cheetah::~Cheetah(){}
-		
+
 void Cheetah::TampilKarakter(){
 	cout << "H" << endl;
 }
 void Cheetah::Bersuara(){
 	cout << "Tah, I'm a cheetah." << endl;
 }
-void Cheetah::Berjalan(int lokasi){
-	//if tidak menembus batas
-		lokasi++;
+void Cheetah::Berjalan(){
+	Animal::Bergerak(1,3);
 }

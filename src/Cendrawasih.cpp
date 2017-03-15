@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Cendrawasih::Cendrawasih() : FlyingAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Cendrawasih::Cendrawasih(int x, int y) : FlyingAnimal(defaultberat_badan, tipe_makan, liar,x,y), LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 
 Cendrawasih::~Cendrawasih(){}
 
@@ -16,11 +16,11 @@ void Cendrawasih::TampilKarakter(){
 void Cendrawasih::Bersuara(){
 	cout << "See, see, see, I'm a cendrawasih." << endl;
 }
-void Cendrawasih::Terbang(int lokasi){
+void Cendrawasih::Terbang(){
 	//if tidak menembus batas
-		lokasi++;
+	Animal::Bergerak(1,1);
 }
-void Cendrawasih::Berjalan(int lokasi){
+void Cendrawasih::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+	Animal::Bergerak(0,-1);
 }

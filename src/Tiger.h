@@ -6,13 +6,9 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 2000
-<<<<<<< HEAD
+#define defaultberat_badan 2000
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar true
 /** @class Tiger
      * Real class untuk hewan Tiger.
      */
@@ -21,8 +17,10 @@ class Tiger : public LandAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Tiger.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Tiger();
+	    Tiger(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -38,7 +36,7 @@ class Tiger : public LandAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Tiger.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 	protected:
 

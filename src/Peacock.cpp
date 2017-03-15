@@ -5,20 +5,20 @@
 
 using namespace std;
 
-Peacock::Peacock() : FlyingAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Peacock::Peacock(int x, int y) : FlyingAnimal(defaultberat_badan, tipe_makan, liar,x,y), LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Peacock::~Peacock(){}
-		
+
 void Peacock::TampilKarakter(){
 	cout << "P" << endl;
 }
 void Peacock::Bersuara(){
 	cout << "Cock, cock, cock, I'm a peacock." << endl;
 }
-void Peacock::Terbang(int lokasi){
+void Peacock::Terbang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(1,2);
 }
-void Peacock::Berjalan(int lokasi){
+void Peacock::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(2,1);
 }

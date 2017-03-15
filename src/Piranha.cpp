@@ -5,16 +5,16 @@
 
 using namespace std;
 
-Piranha::Piranha() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Piranha::Piranha(int x, int y) : WaterAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Piranha::~Piranha(){}
-		
+
 void Piranha::TampilKarakter(){
 	cout << "Z" << endl;
 }
 void Piranha::Bersuara(){
 	cout << "Eeer, I'm a piranha." << endl;
 }
-void Piranha::Berenang(int lokasi){
+void Piranha::Berenang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(-2,1);
 }
