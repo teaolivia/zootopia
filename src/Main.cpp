@@ -9,7 +9,7 @@ int main() {
 	cout << "Selamat datang di Zootopia <3" << endl;
 	cout << "Selamat menjelajah <3" << endl;
 	Zoo Z;  //need to generate maps (?)
-	Animal A;
+	Animal *A;
 	Cage C;
 	Matriks m;
 	Z.Zoo();

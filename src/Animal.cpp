@@ -1,5 +1,6 @@
 // file Animal.cpp
 #include "animal.h"
+#include "matriks.h"
 #include "habitat.h"
 
 float Animal::nb_sayur = 0;

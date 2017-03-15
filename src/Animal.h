@@ -4,6 +4,7 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
+#include "matriks.h"
 #include "habitat.h"
 
 /** @class Animal
