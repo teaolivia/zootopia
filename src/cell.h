@@ -11,7 +11,7 @@ class Zoo;
 class Cell {
 	public:
     friend class Zoo;
-    friend class Matriks;
+    friend class Cage;
     //getter setter
   
 

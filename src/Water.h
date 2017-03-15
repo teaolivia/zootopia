@@ -10,13 +10,12 @@ public:
 	Water(int x,int y);
 	~Water();
     char getChar();
-    void printCage(int x,int y);
+    void printCage();
 private:
 	const int n_brs;
 	const int n_kol;
 	char water = 'w';
-	char **cellwater;
-	Matriks* cagewater;
+	Cell **cellwater;
 	int x;
 	int y;
 };
