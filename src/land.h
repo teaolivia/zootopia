@@ -7,8 +7,9 @@
 
 class Land : public Cage {
 public:
-    Land();
+    Land(int x, int y);
     ~Land();
+    char getChar();
     void printCage();
 private:
 	const char land = 'l';
