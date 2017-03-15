@@ -3,9 +3,9 @@
 #ifndef	PARROT_H
 #define PARROT_H
 
-#include "Animal.h"
-#include "FlyingAnimal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "flying_animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 2
 #define tipe_makan 'o'

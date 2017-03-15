@@ -3,8 +3,8 @@
 #ifndef	ELEPHANT_H
 #define ELEPHANT_H
 
-#include "Animal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 10000
 #define tipe_makan 'h'

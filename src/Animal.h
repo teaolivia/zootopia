@@ -1,4 +1,4 @@
-//Animal.h
+//animal.h
 
 
 #ifndef ANIMAL_H
@@ -41,7 +41,9 @@ class Animal {
          */
 		virtual void Bersuara() = 0;
 
-		void Bergerak(int x, int y);
+		void Bergerak(int x, int y, Matriks& m);
+
+		bool IsLiar();
 
 		int GetLokasi(int i);
 

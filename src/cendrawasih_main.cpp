@@ -18,6 +18,7 @@ int main() {
     cout << "Lokasi awal y: " << w.GetLokasi(1) << endl;
 
     w.Berjalan();
+    w.Terbang();
 
 
     cout << "Lokasi akhir x: " << w.GetLokasi(0) << endl;

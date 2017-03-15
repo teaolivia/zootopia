@@ -3,9 +3,9 @@
 #ifndef	DOVE_H
 #define DOVE_H
 
-#include "Animal.h"
-#include "FlyingAnimal.h"
-#include "LandAnimal.h"
+#include "animal.h"
+#include "flying_animal.h"
+#include "land_animal.h"
 
 #define defaultberat_badan 3
 #define tipe_makan 'o'

@@ -12,6 +12,7 @@ public:
     void printCage();
 private:
 	const char land = 'l';
+	Matriks *cageland;
 };
 
 #endif

@@ -12,6 +12,7 @@ public:
     void printCage(int x, int y);
 private:
 	const char air = 'a';
+	Matriks* cageair;
 };
 
 #endif

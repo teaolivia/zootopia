@@ -3,8 +3,8 @@
 #ifndef	DOLPHIN_H
 #define DOLPHIN_H
 
-#include "Animal.h"
-#include "WaterAnimal.h"
+#include "animal.h"
+#include "water_animal.h"
 
 #define defaultberat_badan 500
 #define tipe_makan 'k'

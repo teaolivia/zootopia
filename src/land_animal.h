@@ -1,9 +1,9 @@
-//File "LandAnimal.h"
+//File "land_animal.h"
 
 #ifndef	LANDANIMAL_H
 #define LANDANIMAL_H
 
-#include "Animal.h"
+#include "animal.h"
 
 /** @class LandAnimal
      * Kelas untuk hewan yang habitatnya di darat. Turunan dari kelas Animal.
