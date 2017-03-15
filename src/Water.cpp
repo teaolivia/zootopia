@@ -3,12 +3,13 @@
 #include <iostream>
 using namespace std;
 
+
 Water::Water() {
-	cagewater = new Matriks(x,y);
+
 }
 
 Water::~Water() {
-	delete[] cagewater;
+
 }
 
 char Water::getChar() {
@@ -16,5 +17,11 @@ char Water::getChar() {
 }
 
 void Water::printCage(int x, int y) {
-	cout << getChar() << endl;
+
+	std::ostream& operator<<(std::ostream &water, const Matriks& cagewater);
+
+}
+
+int main() {
+
 }
