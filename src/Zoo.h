@@ -1,20 +1,20 @@
 #include <iostream>
-
+#include "cell.h"
 using namespace std;
 
 class Zoo {
 	public:
 		// 5 sekawan
-		Zoo();
-		Zoo(int column, int row, Cell cell);
-		Zoo(const Cell& );
+		Zoo(int column, int row);
+		Zoo(const Cell& cell);
 		~Zoo();
-		Zoo& op=(const Cell& );
+		Zoo& operator=(const Cell& c);
 		// methods
 		void printZoo();
 	private:
 		const int column;
 		const int row;
-		Cell* cell;
+		int x,y;
+		Cell** cell;
 		const int NUM_OF_CAGE = 10;
 };

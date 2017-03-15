@@ -1,4 +1,4 @@
-#include "animmal.h"
+#include "animal.h"
 
 
 #include <iostream>

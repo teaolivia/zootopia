@@ -10,12 +10,17 @@ class Zoo;
   */
 class Cell {
 	public:
-    friend class Zoo;
-    friend class Cage;
+    //friend class Zoo;
+    //friend class Cage;
     //getter setter
-  
+
+	bool isEmpty();
+  	char getSymbol();
 
 		//Road<> road;
     // location
+	public:
+		int column;
+		int row;
 };
 #endif
