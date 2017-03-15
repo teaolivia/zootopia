@@ -5,16 +5,16 @@
 
 using namespace std;
 
-MountainLion::MountainLion() : LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+MountainLion::MountainLion(int x, int y) : LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 MountainLion::~MountainLion(){}
-		
+
 void MountainLion::TampilKarakter(){
 	cout << "M" << endl;
 }
 void MountainLion::Bersuara(){
 	cout << "M, grrr, I'm a mountain lion." << endl;
 }
-void MountainLion::Berjalan(int lokasi){
+void MountainLion::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(2,3);
 }

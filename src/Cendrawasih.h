@@ -7,12 +7,9 @@
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 3
-<<<<<<< HEAD
+#define defaultberat_badan 3
 #define tipe_makan 'o'
-=======
-#define default_jenis_makanan 'h'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
+#define liar false
 
 
 /** @class Cendrawasih
@@ -23,8 +20,10 @@ class Cendrawasih : public LandAnimal, public FlyingAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Cendrawasih.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Cendrawasih();
+	    Cendrawasih(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -40,11 +39,11 @@ class Cendrawasih : public LandAnimal, public FlyingAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Cendrawasih.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Cendrawasih.
 		 */
-        void Terbang(int lokasi);
+        void Terbang();
 
 	protected:
 

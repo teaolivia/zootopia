@@ -15,8 +15,11 @@ class LandAnimal : public virtual Animal {
          * Menciptakan suatu hewan yang habitatnya di darat.
          * @param bb Nilai berat badan untuk hewan yang ingin diciptakan.
          * @param jm Karakter jenis makanan untuk hewan yang ingin diciptakan.
+         * @param il Pemeriksaan apakah hewan termasuk liar.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-		LandAnimal(int bb, char jm);
+		LandAnimal(int bb, char jm, bool il, int x, int y);
 
 		/** @brief Destructor.
          */

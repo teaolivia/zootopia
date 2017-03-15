@@ -5,16 +5,16 @@
 
 using namespace std;
 
-Lion::Lion() : LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Lion::Lion(int x, int y) : LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Lion::~Lion(){}
-		
+
 void Lion::TampilKarakter(){
 	cout << "N" << endl;
 }
 void Lion::Bersuara(){
 	cout << "Roar, I'm a lion." << endl;
 }
-void Lion::Berjalan(int lokasi){
+void Lion::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(1,2);
 }

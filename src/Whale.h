@@ -6,13 +6,9 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
-#define defaultBeratBadan 50000
-<<<<<<< HEAD
+#define defaultberat_badan 50000
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar true
 /** @class Whale
      * Real class untuk hewan Whale.
      */
@@ -21,8 +17,10 @@ class Whale : public WaterAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Whale.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Whale();
+	    Whale(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -38,7 +36,7 @@ class Whale : public WaterAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Whale.
          */
-		void Berenang(int lokasi);
+		void Berenang();
 
 	protected:
 };

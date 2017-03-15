@@ -6,13 +6,9 @@
 #include "Animal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 2000
-<<<<<<< HEAD
+#define defaultberat_badan 2000
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar true
 /** @class MountainLion
      * Real class untuk hewan MountainLion.
      */
@@ -21,8 +17,10 @@ class MountainLion : public LandAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek MountainLion.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    MountainLion();
+	    MountainLion(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -38,7 +36,7 @@ class MountainLion : public LandAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi MountainLion.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 	protected:
 

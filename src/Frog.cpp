@@ -5,20 +5,20 @@
 
 using namespace std;
 
-Frog::Frog() : WaterAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Frog::Frog(int x, int y) : WaterAnimal(defaultberat_badan, tipe_makan, liar,x,y), LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Frog::~Frog(){}
-		
+
 void Frog::TampilKarakter(){
 	cout << "F" << endl;
 }
 void Frog::Bersuara(){
 	cout << "Crock, I'm a frog." << endl;
 }
-void Frog::Berenang(int lokasi){
+void Frog::Berenang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(2,-2);
 }
-void Frog::Berjalan(int lokasi){
+void Frog::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(-1,-2);
 }

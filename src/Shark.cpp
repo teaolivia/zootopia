@@ -5,16 +5,17 @@
 
 using namespace std;
 
-Shark::Shark() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Shark::Shark(int x, int y) : WaterAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
+
 Shark::~Shark(){}
-		
+
 void Shark::TampilKarakter(){
 	cout << "Y" << endl;
 }
 void Shark::Bersuara(){
 	cout << "Shoo, I'm a shark." << endl;
 }
-void Shark::Berenang(int lokasi){
+void Shark::Berenang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(4,-2);
 }

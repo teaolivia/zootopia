@@ -5,16 +5,16 @@
 
 using namespace std;
 
-Rayfish::Rayfish() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Rayfish::Rayfish(int x, int y) : WaterAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Rayfish::~Rayfish(){}
-		
+
 void Rayfish::TampilKarakter(){
 	cout << "X" << endl;
 }
 void Rayfish::Bersuara(){
 	cout << "Lash, I'm a rayfish." << endl;
 }
-void Rayfish::Berenang(int lokasi){
+void Rayfish::Berenang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(1,1);
 }

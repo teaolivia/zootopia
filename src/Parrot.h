@@ -7,13 +7,9 @@
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 2
-<<<<<<< HEAD
+#define defaultberat_badan 2
 #define tipe_makan 'o'
-=======
-#define default_jenis_makanan 'h'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar false
 /** @class Parrot
      * Real class untuk hewan Parrot.
      */
@@ -22,8 +18,10 @@ class Parrot : public LandAnimal, public FlyingAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Parrot.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Parrot();
+	    Parrot(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -39,11 +37,11 @@ class Parrot : public LandAnimal, public FlyingAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Parrot.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Parrot.
 		 */
-        void Terbang(int lokasi);
+        void Terbang();
 
 	protected:
 

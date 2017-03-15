@@ -5,16 +5,16 @@
 
 using namespace std;
 
-Dolphin::Dolphin() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Dolphin::Dolphin(int x, int y) : WaterAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Dolphin::~Dolphin(){}
-		
+
 void Dolphin::TampilKarakter(){
 	cout << "I" << endl;
 }
 void Dolphin::Bersuara(){
 	cout << "Hoo, I'm a dolphin." << endl;
 }
-void Dolphin::Berenang(int lokasi){
+void Dolphin::Berenang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(2,3);
 }

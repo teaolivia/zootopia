@@ -2,19 +2,22 @@
 #include "Animal.h"
 #include "habitat.h"
 
-float Animal::NbSayur = 0;
-float Animal::NbDaging = 0;
+float Animal::nb_sayur = 0;
+float Animal::nb_daging = 0;
 
-Animal::Animal(int bb, char jm) : BeratBadan(bb), jenis_makanan(jm) {
+Animal::Animal(int bb, char jm, bool il, int x, int y) : berat_badan(bb), jenis_makanan(jm), is_liar(il) {
+    lokasi = new int[2];
+    lokasi[0] = x;
+    lokasi[1] = y;
     if (jenis_makanan=='k') {
-        NbDaging += (0.02*BeratBadan);
+        nb_daging += (0.02*berat_badan);
     }
     else if (jenis_makanan=='h') {
-        NbSayur += (0.02*BeratBadan);
+        nb_sayur += (0.02*berat_badan);
     }
     else if (jenis_makanan=='o') {
-        NbDaging += (0.01*BeratBadan);
-        NbSayur += (0.01*BeratBadan);
+        nb_daging += (0.01*berat_badan);
+        nb_sayur += (0.01*berat_badan);
     }
 }
 
@@ -22,8 +25,17 @@ Animal::~Animal() {
 
 }
 
+void Animal::Bergerak(int x, int y) {
+    lokasi[0] += x;
+    lokasi[1] += y;
+}
+
+int Animal::GetLokasi(int i) {
+    return lokasi[i];
+}
+
 int Animal::GetBeratBadan() {
-    return BeratBadan;
+    return berat_badan;
 }
 
 bool Animal::IsHabitat(char c) {
@@ -35,6 +47,13 @@ char Animal::GetHabitatAnimal(int i) {
 }
 
 float Animal::GetNbMakanan() {
-    return NbSayur+NbDaging;
+    return nb_sayur+nb_daging;
 }
 
+float Animal::GetNbSayur() {
+    return nb_sayur;
+}
+
+float Animal::GetNbDaging() {
+    return nb_daging;
+}

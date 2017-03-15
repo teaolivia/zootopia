@@ -6,13 +6,9 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
-#define defaultBeratBadan 1
-<<<<<<< HEAD
+#define defaultberat_badan 1
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar true
 /** @class Piranha
      * Real class untuk hewan Piranha.
      */
@@ -21,8 +17,10 @@ class Piranha : public WaterAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Piranha.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Piranha();
+	    Piranha(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -38,7 +36,7 @@ class Piranha : public WaterAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Piranha.
          */
-		void Berenang(int lokasi);
+		void Berenang();
 
 	protected:
 

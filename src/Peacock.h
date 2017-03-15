@@ -7,13 +7,9 @@
 #include "FlyingAnimal.h"
 #include "LandAnimal.h"
 
-#define defaultBeratBadan 3
-<<<<<<< HEAD
+#define defaultberat_badan 3
 #define tipe_makan 'o'
-=======
-#define default_jenis_makanan 'h'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar false
 /** @class Peacock
      * Real class untuk hewan Peacock.
      */
@@ -22,8 +18,10 @@ class Peacock : public LandAnimal, public FlyingAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Peacock.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Peacock();
+	    Peacock(int x, int y);
 
 	    /** @brief Destructor.
          */
@@ -39,11 +37,11 @@ class Peacock : public LandAnimal, public FlyingAnimal {
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Peacock.
          */
-		void Berjalan(int lokasi);
+		void Berjalan();
 
 		/** @brief Mengimplementasikan method untuk bergerak bagi Peacock.
 		 */
-        void Terbang(int lokasi);
+        void Terbang();
 
 	protected:
 

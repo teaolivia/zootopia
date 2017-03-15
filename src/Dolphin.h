@@ -6,13 +6,9 @@
 #include "Animal.h"
 #include "WaterAnimal.h"
 
-#define defaultBeratBadan 500
-<<<<<<< HEAD
+#define defaultberat_badan 500
 #define tipe_makan 'k'
-=======
-#define default_jenis_makanan 'k'
->>>>>>> da3158a40bebe7615f451e88707f661f213ca894
-
+#define liar false
 /** @class Dolphin
      * Real class untuk hewan Dolphin.
      */
@@ -21,8 +17,10 @@ class Dolphin : public WaterAnimal {
 	public:
 	    /** @brief Constructor.
          * Menciptakan suatu objek Dolphin.
+         * @param x Lokasi hewan (absis).
+         * @param y Lokasi hewan (ordinat).
          */
-	    Dolphin();
+	    Dolphin(int x, int y);
 
 	    /** @brief Destructor.
          */

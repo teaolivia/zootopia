@@ -5,20 +5,20 @@
 
 using namespace std;
 
-Parrot::Parrot() : FlyingAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
+Parrot::Parrot(int x, int y) : FlyingAnimal(defaultberat_badan, tipe_makan, liar,x,y), LandAnimal(defaultberat_badan, tipe_makan, liar,x,y), Animal(defaultberat_badan, tipe_makan, liar,x,y) {}
 Parrot::~Parrot(){}
-		
+
 void Parrot::TampilKarakter(){
 	cout << "A" << endl;
 }
 void Parrot::Bersuara(){
 	cout << "Rot, rot, rot, I'm a parrot." << endl;
 }
-void Parrot::Terbang(int lokasi){
+void Parrot::Terbang(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(1,1);
 }
-void Parrot::Berjalan(int lokasi){
+void Parrot::Berjalan(){
 	//if tidak menembus batas
-		lokasi++;
+		Animal::Bergerak(2,1);
 }
