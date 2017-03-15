@@ -4,6 +4,7 @@
 #define nil NULL
 
 #include <iostream>
+class Matriks;
 
 class Matriks {
   public:
@@ -28,21 +29,6 @@ class Matriks {
     // test apakah ukuran sama: true jika m1.n_brs== m2.n_brs && m1.n_kol== m2.n_kol
     friend bool IsEqSize (Matriks m1, Matriks m2);
 
-    // operator+ penjumlahan nilai b dari kedua matriksyg posisinya sama
-    // Mhasil(i,j) = M1 (i,j) + M2(i,j)
-    // Proses : jika ukuran m2 tak sama dengan current object,
-    // yang tak beririsan tidak dijumlahkan, hanya dicopy
-    // hasilnya adalah matriks yang lebih besar
-    // ditulis sebagai function member
-    Matriks& operator+ (Matriks m2);
-
-    // operator* untuk melakukan perkalian thd setiap nilai b yang posisinya sama
-    // Mhasil(i,j) = M1 (i,j) * M2(i,j)
-    // jika matriks ukurannya tak sama, yang tak beririsan tak dikalikan
-    // hasilnya adalah matriks yang lebih besar ukurannya
-    // Ditulis sebagai friend function
-    friend Matriks& operator* (const Matriks& m1, const Matriks& m2);
-
     // menulis ukuran dan isi Matriks (lihat contoh
     friend std::ostream& operator<<(std::ostream &os, const Matriks& m);
 
@@ -60,8 +46,8 @@ class Matriks {
   private:
     const int n_brs; // Banyaknya baris, n_brs > 0
     const int n_kol; // Banyaknya kolom, n_kol > 0
-    int i;
-    int j;
+    // int i;
+    // int j;
     char ** cell; // Elemen matriks
 };
 
