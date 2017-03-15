@@ -24,10 +24,6 @@ class Cage {
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
-		~Cage();
-        /** @class Cage
-          * Kelas yang menciptakan cage dengan ukuran tertentu
-          */
         virtual char getChar();
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
@@ -36,7 +32,6 @@ class Cage {
 
 	protected:
     	// Habitat
-        Matriks* cage;
     	int x;
     	int y;
 }; 

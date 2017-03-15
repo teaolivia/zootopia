@@ -7,8 +7,8 @@
 
 class Water : public Cage {
 public:
-    Water();
-    ~Water();
+	Water();
+	~Water();
     char getChar();
     void printCage(int x, int y);
 private:
