@@ -43,6 +43,10 @@ class Matriks {
     // Mengembalikan n_kol
     int GetKol();
 
+    int GetSize();
+    // check if matriks inside of another matriks
+    friend bool isA(Matriks& m1, Matriks m2);
+
   private:
     const int n_brs; // Banyaknya baris, n_brs > 0
     const int n_kol; // Banyaknya kolom, n_kol > 0

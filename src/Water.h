@@ -13,6 +13,7 @@ public:
     void printCage(int x, int y);
 private:
 	char water = 'w';
+	Matriks* cagewater;
 };
 
 #endif

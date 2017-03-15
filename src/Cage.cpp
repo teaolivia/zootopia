@@ -7,15 +7,17 @@ using namespace std;
 
 Cage::Cage() : cage() {
 	// bikin matriks di sini
-	cage = Matriks();
+	cage = new Matriks();
 }
 
 Cage::Cage(int x, int y) {
 	// matriks dengan parameter
+	cage = new Matriks(x,y);
 }
 
 Cage::~Cage() {
 	// tes
+	delete[] cage;
 }
 
 char Cage::getChar() {

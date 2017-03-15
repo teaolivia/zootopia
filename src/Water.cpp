@@ -4,11 +4,11 @@
 using namespace std;
 
 Water::Water() {
-cout << "asd";
+	cagewater = new Matriks(x,y);
 }
 
 Water::~Water() {
-	
+	delete[] cagewater;
 }
 
 char Water::getChar() {

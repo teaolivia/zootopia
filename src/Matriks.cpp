@@ -100,3 +100,11 @@ using namespace std;
     int Matriks::GetKol() {
 		return n_kol;
 	}
+
+	int Matriks::GetSize() {
+		return n_brs * n_kol;
+	}
+
+	bool IsA (Matriks m1, Matriks m2) {
+		return ((m1.GetSize() < m2.GetSize())&&(m1.GetSize()== m2.GetSize()));
+	}

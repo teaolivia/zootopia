@@ -36,7 +36,7 @@ class Cage {
 
 	protected:
     	// Habitat
-        Matriks cage;
+        Matriks* cage;
     	int x;
     	int y;
 }; 
