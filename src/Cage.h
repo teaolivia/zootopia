@@ -16,7 +16,7 @@ class Cage {
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
-		Cage();
+		//Cage();
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
@@ -32,6 +32,9 @@ class Cage {
 
 	protected:
     	// Habitat
+        const int n_brs;
+        const int n_kol;
+        char **cell;
     	int x;
     	int y;
 }; 
