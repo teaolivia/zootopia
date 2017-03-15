@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Dolphin::Dolphin() : WaterAnimal(defaultBeratBadan) {}
+Dolphin::Dolphin() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Dolphin::~Dolphin(){}
 		
 void Dolphin::TampilKarakter(){

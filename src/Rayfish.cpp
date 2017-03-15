@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Rayfish::Rayfish() : WaterAnimal(defaultBeratBadan) {}
+Rayfish::Rayfish() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Rayfish::~Rayfish(){}
 		
 void Rayfish::TampilKarakter(){

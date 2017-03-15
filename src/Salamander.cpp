@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Salamander::Salamander() : WaterAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Salamander::Salamander() : WaterAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Salamander::~Salamander(){}
 		
 void Salamander::TampilKarakter(){

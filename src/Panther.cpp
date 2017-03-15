@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Panther::Panther() : LandAnimal(defaultBeratBadan) {}
+Panther::Panther() : LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Panther::~Panther(){}
 		
 void Panther::TampilKarakter(){

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Parrot::Parrot() : FlyingAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Parrot::Parrot() : FlyingAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Parrot::~Parrot(){}
 		
 void Parrot::TampilKarakter(){

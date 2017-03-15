@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Crocodile::Crocodile() : WaterAnimal(defaultBeratBadan), LandAnimal(defaultBeratBadan) {}
+Crocodile::Crocodile() : WaterAnimal(defaultBeratBadan, tipe_makan), LandAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Crocodile::~Crocodile(){}
 		
 void Crocodile::TampilKarakter(){

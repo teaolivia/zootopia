@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Shark::Shark() : WaterAnimal(defaultBeratBadan) {}
+Shark::Shark() : WaterAnimal(defaultBeratBadan, tipe_makan), Animal(defaultBeratBadan, tipe_makan) {}
 Shark::~Shark(){}
 		
 void Shark::TampilKarakter(){
