@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include "cage.h"
 #include <iostream>
 
@@ -30,7 +35,8 @@ Cage::~Cage() {
 	}
 }
 
-char Cage::getChar() {
+char Cage::Render() {
+  return "C";
 }
 
 void Cage::printCage() {

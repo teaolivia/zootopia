@@ -1,6 +1,10 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 // file Animal.cpp
 #include "animal.h"
-#include "zoo.h"
+#include "matriks.h"
 #include "habitat.h"
 
 float Animal::nb_sayur = 0;
@@ -26,8 +30,8 @@ Animal::~Animal() {
 
 }
 
-void Animal::Bergerak(int x, int y, Zoo& zoo) {
-    if (IsHabitat(zoo.cell[lokasi[0]+x][lokasi[1]+y].GetChar())) {
+void Animal::Bergerak(int x, int y, Matriks& m) {
+    if (IsHabitat(Matriks[lokasi[0]+x][lokasi[1]+y].GetJenisHabitat())) {
         lokasi[0] += x;
         lokasi[1] += y;
     }

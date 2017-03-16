@@ -1,3 +1,9 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+// File Air.h
+
 // file Air.h
 
 #include "cell.h"
@@ -14,4 +20,3 @@ private:
 };
 
 #endif
-

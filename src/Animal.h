@@ -1,3 +1,8 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
+//animal.h
 //animal.h
 
 

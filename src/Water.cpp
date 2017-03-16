@@ -9,4 +9,3 @@ Water::Water() : Cell('w') {
 
 Water::~Water() {
 	
-}
