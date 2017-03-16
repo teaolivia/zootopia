@@ -1,13 +1,12 @@
+#include "cell.h"
 #include "air.h"
+#include <iostream>
+using namespace std;
 
-Air::Air() {
-	cageair = new Matriks(x,y);
+Air::Air() : Cell('a') {
+
 }
 
 Air::~Air() {
-	delete [] cageair;
-}
-
-void Air::printCage() {
-	cout << air << endl;
+	
 }

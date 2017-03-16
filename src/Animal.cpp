@@ -1,6 +1,6 @@
 // file Animal.cpp
 #include "animal.h"
-#include "matriks.h"
+#include "zoo.h"
 #include "habitat.h"
 
 float Animal::nb_sayur = 0;
@@ -26,8 +26,8 @@ Animal::~Animal() {
 
 }
 
-void Animal::Bergerak(int x, int y, Matriks& m) {
-    if (IsHabitat(Matriks[lokasi[0]+x][lokasi[1]+y].GetJenisHabitat())) {
+void Animal::Bergerak(int x, int y, Zoo& zoo) {
+    if (IsHabitat(zoo.cell[lokasi[0]+x][lokasi[1]+y].GetChar())) {
         lokasi[0] += x;
         lokasi[1] += y;
     }

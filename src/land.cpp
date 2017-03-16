@@ -1,15 +1,12 @@
+#include "cell.h"
 #include "land.h"
+#include <iostream>
+using namespace std;
 
-Land::Land() {
-	
+Land::Land() : Cell('l') {
+
 }
 
 Land::~Land() {
-	delete[] cageland;
-}
-
-void Land::printCage() {
 	
 }
-
-

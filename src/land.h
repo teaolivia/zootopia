@@ -1,19 +1,17 @@
 // file Land.h
 
-#include "cage.h"
+#include "cell.h"
 
 #ifndef LAND_H
 #define LAND_H
 
-class Land : public Cage {
+class Land : public Cell {
 public:
-    Land(int x, int y);
-    ~Land();
-    char getChar();
-    void printCage();
+	Land();
+	~Land();
 private:
-	const char land = 'l';
-	Matriks *cageland;
+	
 };
 
 #endif
+

@@ -1,18 +1,16 @@
 // file Air.h
 
-#include "cage.h"
+#include "cell.h"
 
 #ifndef AIR_H
 #define AIR_H
 
-class Air : public Cage {
+class Air : public Cell {
 public:
-    Air();
-    ~Air();
-    void printCage(int x, int y);
+	Air();
+	~Air();
 private:
-	const char air = 'a';
-	Matriks* cageair;
+	
 };
 
 #endif

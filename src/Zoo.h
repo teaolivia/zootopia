@@ -1,16 +1,20 @@
-#include <iostream>
+#ifndef ZOO_H
+#define ZOO_H
+
 #include "cell.h"
-using namespace std;
+#include <iostream>
+
 
 class Zoo {
 	public:
 		// 5 sekawan
 		Zoo(int column, int row);
-		Zoo(const Cell& cell);
 		~Zoo();
-		Zoo& operator=(const Cell& c);
+		void SetZoo(int i, int j, Cell c);
+		Cell GetCell(int i, int j);
 		// methods
-		void printZoo();
+
+		//friend std::ostream& operator<<(std::ostream &os, const Matriks& m);
 	private:
 		const int column;
 		const int row;
@@ -18,3 +22,5 @@ class Zoo {
 		Cell** cell;
 		const int NUM_OF_CAGE = 10;
 };
+
+#endif
