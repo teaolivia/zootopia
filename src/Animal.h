@@ -3,12 +3,14 @@
 // Aurelia - 13512099
 
 //animal.h
+//animal.h
 
 
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
-#include "matriks.h"
+#include "cell.h"
+#include "Zoo.h"
 #include "habitat.h"
 
 /** @class Animal
@@ -46,7 +48,7 @@ class Animal {
          */
 		virtual void Bersuara() = 0;
 
-		void Bergerak(int x, int y, Matriks& m);
+		void Bergerak(int x, int y, Zoo& zoo);
 
 		bool IsLiar();
 

@@ -4,8 +4,14 @@
 using namespace std;
 
 class Renderable {
-  public :
-    virtual void Render() = 0;
+  public:
+  	Renderable();
+  	~Renderable();
+
+  void printMatriks();
+
+	virtual void Render() = 0;
   
+
   private:
 };
