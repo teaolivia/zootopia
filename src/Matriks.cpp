@@ -1,3 +1,6 @@
+// Pembuat :
+// Thea Olivia - 13511001
+
 #include "matriks.h"
 #include <iostream>
 
@@ -8,9 +11,9 @@ using namespace std;
     // ctor inisialisasi n_brs dan n_kol dengan ctor initialization list, N=M=defsize
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(): n_brs(DEFSIZE), n_kol(DEFSIZE) {
-		cell = new char* [n_brs];
+		cell = new Cell* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			cell[i] = new char [n_kol];
+			cell[i] = new Cell [n_kol];
 			for (int j=0; j<= n_kol; j++) {
 				cell[i][j] = 0;
 			}
@@ -20,9 +23,9 @@ using namespace std;
     // ctor dengan param n (banyaknya baris) dan m (banyaknya kolom)
     // Seluruh elemen matriks diinisialisasi dengan nilai 0
     Matriks::Matriks(int n, int m): n_brs(n), n_kol(n) {
-		cell = new char* [n_brs];
+		cell = new Cell* [n_brs];
 		for (int i=0; i<= n_brs; i++) {
-			cell[i] = new char [n_kol];
+			cell[i] = new Cell [n_kol];
 			for (int j=0; j<= n_kol; j++) {
 				cell[i][j] = 0;
 			}
@@ -33,10 +36,10 @@ using namespace std;
     Matriks::Matriks(Matriks& m) : n_brs (m.n_brs), n_kol (m.n_kol) {
 		int i,j;
 		
-		cell = new char *[n_brs];
+		cell = new Cell *[n_brs];
 		
 		for (i=0; i<=n_brs; i++) {
-			cell[i] = new char[n_kol];
+			cell[i] = new Cell[n_kol];
 			for (j=0; j<=n_kol; j++) {
 				cell[j] = m.cell[j];
 			}
@@ -56,9 +59,9 @@ using namespace std;
     // dan dapat melakukan assignment m1=m2; prekondisi: ukuran m1=ukuran m2
     Matriks& Matriks::operator= (Matriks& m) {
 		delete [] cell;
-		cell = new char*[n_brs];
+		cell = new Cell*[n_brs];
 		for (int i=0; i<n_brs; i++) {
-	        cell[i] = new char[n_kol];
+	        cell[i] = new Cell[n_kol];
 	        for (int j=0; j<n_kol; j++) {
 	            cell[i][j] = m.cell[i][j];
 	        }
@@ -83,7 +86,7 @@ using namespace std;
 	}
 
     // isikan nilai v di posisi data[i,j], i dan j terdefinisi
-    void Matriks::SetData (int i, int j, char v) {
+    void Matriks::SetData (int i, int j, Cell v) {
 		cell[i][j]=v;
 	}
 

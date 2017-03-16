@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include <iostream>
 #include <string>
 
@@ -18,10 +23,9 @@ class Road : public Facility {
 		// friend with zoo
 		friend class Zoo;
 	private:
-		enum roadType
-		{
-			cell_entrance const, 	// pintu masuk
-			cell_exit const,		// pintu keluar
-			cell_space const		// jalan lowong
+		enum roadType	{
+			cell_entrance, 	// pintu masuk
+			cell_exit,		// pintu keluar
+			cell_space		// jalan lowong
 		};
 };

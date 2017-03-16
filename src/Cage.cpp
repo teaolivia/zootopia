@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include "cage.h"
 #include <iostream>
 
@@ -10,22 +15,32 @@ using namespace std;
 // 	c = new Matriks();
 // }
 
-// Cage::Cage(int x, int y) {
-// 	// matriks dengan parameter
-// 	c = new Matriks(x,y);
-// }
-
-// Cage::~Cage() {
-// 	// tes
-// 	c.~Matriks();
-// }
-
-char Cage::getChar() {
+Cage::Cage(int x, int y) : n_brs(x), n_kol(y) {
+	// matriks dengan parameter
+	cell = new Cell *[n_kol];
+		for (int j=0; j<= n_kol; j++) {
+			cell[j] = new Cell [n_brs];
+			for (int i=0; i<= n_brs; i++) {
+//				cell[i][j] = getChar();
+			}
+		}
 }
 
-void Cage::printCage(int x,int y) {
-	//cout << "Tes"<<endl;
+Cage::~Cage() {
+	//int i,j;
+	for (int j=0; j<n_kol; j++) {
+		delete [] cell[j];
+		for (int i=0; i<n_brs; i++) 
+			delete [] cell[i];	
+	}
+}
 
+char Cage::Render() {
+  return "C";
+}
+
+void Cage::printCage() {
+		
 }
 // template <class habitat>
 // void printCage(int x,int y) {

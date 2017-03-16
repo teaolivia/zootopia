@@ -1,3 +1,6 @@
+// Pembuat:
+// Thea Olivia - 13511001
+
 #ifndef MATRIKS_H
 #define MATRIKS_H
 #define DEFSIZE 100

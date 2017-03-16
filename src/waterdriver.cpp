@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include "cage.h"
 #include "water.h"
 #include "air.h"
@@ -7,9 +12,9 @@
 using namespace std;
 
 int main() {
-	Water w;
 
-	w->printCage();
+
+	
 
     return 0;
 }

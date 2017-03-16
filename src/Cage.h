@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #ifndef CAGE_H
 #define CAGE_H
 
@@ -7,6 +12,7 @@
 // #include "Water.h"
 // #include "Air.h"
 //#include "habitat.h"
+#include "cell.h"
 
 /** @class Cage
   * Kelas yang menciptakan cage dengan ukuran tertentu
@@ -16,7 +22,7 @@ class Cage {
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
-		Cage();
+		~Cage();
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
@@ -28,10 +34,15 @@ class Cage {
         /** @class Cage
           * Kelas yang menciptakan cage dengan ukuran tertentu
           */
-		virtual void printCage(int x,int y);
+		virtual void printCage();
+
+        // virtual void insertAnimal();
 
 	protected:
     	// Habitat
+        const int n_brs;
+        const int n_kol;
+        Cell **cell;
     	int x;
     	int y;
 }; 

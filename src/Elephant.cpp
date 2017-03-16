@@ -1,3 +1,7 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 //File "Elephant.cpp"
 
 #include "Elephant.h"
@@ -6,6 +10,7 @@
 using namespace std;
 
 Elephant::Elephant(int x, int y) : LandAnimal(defaultberat_badan, tipe_makan, liar, x,y), Animal(defaultberat_badan, tipe_makan, liar, x,y) {
+}
 Elephant::~Elephant(){}
 
 void Elephant::TampilKarakter(){

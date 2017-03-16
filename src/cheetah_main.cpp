@@ -1,3 +1,7 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 #include "animal.h"
 #include "land_animal.h"
 #include "Cheetah.h"

@@ -1,3 +1,7 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 #ifndef	SALAMANDER_H
 #define SALAMANDER_H
 
