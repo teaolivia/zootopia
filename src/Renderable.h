@@ -2,8 +2,7 @@ using namespace std;
 
 class Renderable {
   public :
-  Renderable();
-  ~Renderable();
+    virtual void Render() = 0;
   
   private:
 };

@@ -30,7 +30,8 @@ Cage::~Cage() {
 	}
 }
 
-char Cage::getChar() {
+char Cage::Render() {
+  return "C";
 }
 
 void Cage::printCage() {
