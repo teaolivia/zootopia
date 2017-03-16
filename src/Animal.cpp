@@ -25,13 +25,13 @@ Animal::~Animal() {
 
 }
 
-void Animal::Bergerak(int x, int y, Matriks& m) {
-    if (IsHabitat(Matriks[lokasi[0]+x][lokasi[1]+y].GetJenisHabitat())) {
-        lokasi[0] += x;
-        lokasi[1] += y;
-    }
+// void Animal::Bergerak(int x, int y, Matriks& m) {
+//     if (IsHabitat(Matriks[lokasi[0]+x][lokasi[1]+y].GetJenisHabitat())) {
+//         lokasi[0] += x;
+//         lokasi[1] += y;
+//     }
 
-}
+// }
 
 bool Animal::IsLiar() {
     return is_liar;

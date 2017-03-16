@@ -41,7 +41,7 @@ class Animal {
          */
 		virtual void Bersuara() = 0;
 
-		void Bergerak(int x, int y, Matriks& m);
+		//void Bergerak(int x, int y, Matriks& m);
 
 		bool IsLiar();
 
