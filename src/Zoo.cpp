@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include "Zoo.h"
 
 Zoo::Zoo(int x, int y) : row(x), column(y){

@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #include "Facility.h"
 
 // 5 sekawan

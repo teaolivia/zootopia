@@ -1,3 +1,7 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 //file FlyingAnimal.cpp
 #include "animal.h"
 #include "flying_animal.h"

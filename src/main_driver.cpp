@@ -1,3 +1,6 @@
+// Pembuat:
+// Thea Olivia - 13511001
+
 #include "animal.h"
 #include "zoo.h"
 #include "matriks.h"

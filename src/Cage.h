@@ -1,3 +1,8 @@
+// Pembuat :
+// Thea Olivia - 13511001
+// Mahesa Gandakusuma - 13513091
+
+
 #ifndef CAGE_H
 #define CAGE_H
 

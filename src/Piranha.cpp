@@ -1,3 +1,7 @@
+// Pembuat :
+// Jacqueline Ibrahim - 13512074
+// Aurelia - 13512099
+
 //File "Piranha.cpp"
 
 #include "Piranha.h"
