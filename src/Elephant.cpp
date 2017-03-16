@@ -10,6 +10,7 @@
 using namespace std;
 
 Elephant::Elephant(int x, int y) : LandAnimal(defaultberat_badan, tipe_makan, liar, x,y), Animal(defaultberat_badan, tipe_makan, liar, x,y) {
+}
 Elephant::~Elephant(){}
 
 void Elephant::TampilKarakter(){

@@ -10,7 +10,7 @@ Air::Air() {
 }
 
 Air::~Air() {
-	delete [] cageair;
+	delete cageair;
 }
 
 void Air::printCage() {
